@@ -11,6 +11,9 @@ public class EnemySpawner : MonoBehaviour {
     public GameObject[] enemyPrefabs;
     public Transform[] enemySpawns;
     public Transform[] enemyPositions;
+
+    public bool randomSpawn;
+
     int[] enemyInts = {
             //1st Wave - 6
             0, 1, 0, 1,
@@ -111,7 +114,13 @@ public class EnemySpawner : MonoBehaviour {
         }
         for (int i = 1; i <= waveSize; i++) {
             yield return new WaitWhile(() => paused);
-            SpawnEnemy(enemyInts[spawnKey], enemyInts[spawnKey + 1], enemyInts[spawnKey + 2], enemyInts[spawnKey + 3]);
+            if (randomSpawn) {
+                SpawnEnemy(enemyInts[Random.Range(0,enemyPrefabs.Length)], enemyInts[spawnKey + 1],
+                enemyInts[spawnKey + 2], enemyInts[spawnKey + 3]);
+            }
+            else {
+                SpawnEnemy(enemyInts[spawnKey], enemyInts[spawnKey + 1], enemyInts[spawnKey + 2], enemyInts[spawnKey + 3]);
+            }
             spawnKey += 4;            
             yield return new WaitForSeconds(Random.Range(1.0f, 2.0f));
         }

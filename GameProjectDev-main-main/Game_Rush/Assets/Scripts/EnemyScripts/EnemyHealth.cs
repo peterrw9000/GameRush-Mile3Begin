@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     bool isDead = false;
 
     public PlayerMover playerMover;
+    public GameObject explosion;
 
     AudioManager audioManagement;
     AudioSource enemyDeathSounds;
@@ -50,7 +51,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    void Death() {
+    public void Death() {
         if(gameObject.GetComponent<EnemyAttackRanged>() != null)
         {
             enemyDeathSounds.PlayOneShot(audioManagement.soundEffects[7]);
@@ -60,6 +61,11 @@ public class EnemyHealth : MonoBehaviour
             enemyDeathSounds.PlayOneShot(audioManagement.soundEffects[6]);
         }
         playerMover.enemiesDestroyed++;
-        Destroy(gameObject, .2f);        
+        Explode();
+        Destroy(gameObject, .2f);
+    }
+
+    void Explode() {
+        Instantiate(explosion, transform.position, transform.rotation);
     }
 }
