@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
 
     public PlayerMover playerMover;
     public GameObject explosion;
+    public TriangleExplosion triangleExplosion;
 
     AudioManager audioManagement;
     AudioSource enemyDeathSounds;
@@ -67,5 +68,6 @@ public class EnemyHealth : MonoBehaviour
 
     void Explode() {
         Instantiate(explosion, transform.position, transform.rotation);
+        triangleExplosion.TriggerExplosion();
     }
 }
