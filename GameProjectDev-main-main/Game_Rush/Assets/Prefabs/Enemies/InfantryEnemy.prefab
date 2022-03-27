@@ -82,8 +82,8 @@ MonoBehaviour:
   startingHealth: 5
   currentHealth: 0
   playerMover: {fileID: 0}
-  explosion: {fileID: 8103541539826657223, guid: c256bae6a613de54395a34782c62decf, type: 3}
-  triangleExplosion: {fileID: 7088663250294032376}
+  explosion: {fileID: 8725940683926336782, guid: 01d83e3c2307614459a06bcdc1de9661, type: 3}
+  triangles: {fileID: 6413659576447008709}
 --- !u!65 &3306198291071839848
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3306198291071839855}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97bebb9099b0823439f1ad6243b28b89, type: 3}
   m_Name: 
@@ -297,24 +297,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 047f391428fb7824fb6b2e3a507ad37a, type: 3}
   m_PrefabInstance: {fileID: 5830465356526429011}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4232174042183459054 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7661267862090400701, guid: 047f391428fb7824fb6b2e3a507ad37a, type: 3}
-  m_PrefabInstance: {fileID: 5830465356526429011}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7088663250294032376
+--- !u!114 &6413659576447008709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4232174042183459054}
+  m_GameObject: {fileID: 6640716565001510402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97bebb9099b0823439f1ad6243b28b89, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c3f733d708818e4996d206d7a14ffe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1925089263105870433
+--- !u!114 &8743529080336535532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
