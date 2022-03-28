@@ -81,7 +81,7 @@ MonoBehaviour:
   startingHealth: 5
   currentHealth: 0
   playerMover: {fileID: 0}
-  explosion: {fileID: 7786584070342475965, guid: cb6d2ce4b337cb74e869ba5dbb29b53b, type: 3}
+  explosion: {fileID: 8725940683926336782, guid: 01d83e3c2307614459a06bcdc1de9661, type: 3}
 --- !u!65 &3306198291071839848
 BoxCollider:
   m_ObjectHideFlags: 0
