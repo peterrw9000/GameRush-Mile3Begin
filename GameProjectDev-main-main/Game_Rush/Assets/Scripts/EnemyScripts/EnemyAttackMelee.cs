@@ -10,6 +10,7 @@ public class EnemyAttackMelee : MonoBehaviour
     EnemyHealth enemyHealth;
     AudioManager audioManagement;
     AudioSource enemyMeleeSound;
+    PlayerMover playerMover;
 
     private void Awake()
     {
@@ -23,6 +24,7 @@ public class EnemyAttackMelee : MonoBehaviour
         playerHealth = player.GetComponent<PlayerHealth>();
         enemyHealth = GetComponent<EnemyHealth>();
         enemyMeleeSound = GetComponent<AudioSource>();
+        playerMover = GetComponent<PlayerMover>();
     }
 
     void OnTriggerEnter(Collider other) {
@@ -40,6 +42,7 @@ public class EnemyAttackMelee : MonoBehaviour
     void Attack() {
         enemyMeleeSound.PlayOneShot(audioManagement.soundEffects[5]);
         playerHealth.TakeDamage(attackDamage);
+        playerMover.enemiesDestroyed++;
         enemyHealth.Death();
     }
 
