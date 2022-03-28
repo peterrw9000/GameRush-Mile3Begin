@@ -28,13 +28,12 @@ public class PlayerMover : MonoBehaviour
         if (Input.GetKeyDown("m")) {
             MovePlayer();
         }
-       if (timerStarted == true) {
+        if (timerStarted == true) {
             timer -= Time.deltaTime;
         }
         if (timer <= 0) {
             MovePlayer();
         }
-
     }
 
     void StartTimer() {
@@ -56,8 +55,8 @@ public class PlayerMover : MonoBehaviour
     }
 }
 
-/*public void WaveSpawn() {
-    StartCoroutine(StartSpawn());
+/*public void () {
+    StartCoroutine(XX());
 }
 
-IEnumerator StartSpawn() {*/
+IEnumerator XX() {*/

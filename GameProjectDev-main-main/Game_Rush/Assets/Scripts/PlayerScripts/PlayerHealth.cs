@@ -13,6 +13,9 @@ public class PlayerHealth : MonoBehaviour
     public MicroGameManager microGames;
     public int playerLives = 5;
 
+    public float timer;
+    [SerializeField] bool timerStarted = true;
+
     public bool paused;
     void OnPauseGame() {
         paused = true;
@@ -22,6 +25,9 @@ public class PlayerHealth : MonoBehaviour
         paused = false;
     }
 
+    public void StartTimer() {
+        timerStarted = true;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +42,13 @@ public class PlayerHealth : MonoBehaviour
         if (!paused) {
             DisplayGameText(); 
         }
+
+        if (timerStarted == true) {
+            timer -= Time.deltaTime;
+        }
+        if (timer < 0) {
+            timerStarted = false;
+        }
     }
 
     void DisplayGameText() {
@@ -45,9 +58,11 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void TakeDamage(int d) {
-        currentHealth -= d;
-        if (currentHealth <= 0 && isDead == false) {
-            Death();
+        if (timer < 0) {
+            currentHealth -= d;
+            if (currentHealth <= 0 && isDead == false) {
+                Death();
+            }
         }
     }
 

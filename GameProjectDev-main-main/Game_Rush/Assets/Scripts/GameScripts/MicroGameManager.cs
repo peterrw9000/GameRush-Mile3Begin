@@ -15,9 +15,12 @@ public class MicroGameManager : MonoBehaviour
     AudioSource microgameSounds;
     int gameNum = 9;
 
+    DiskDropScorer diskDropScorer;
+
     private void Awake()
     {
         audioManagement = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        diskDropScorer = GetComponentInChildren<DiskDropScorer>();
     }
 
     // Start is called before the first frame update
@@ -40,6 +43,9 @@ public class MicroGameManager : MonoBehaviour
             gameNum = game;
             microGame[game].SetActive(true);
             PauseMainGame();
+            if (gameNum == 0) {
+                diskDropScorer.score = 0;
+            }
         }
         else {
             microGame[game].SetActive(false);

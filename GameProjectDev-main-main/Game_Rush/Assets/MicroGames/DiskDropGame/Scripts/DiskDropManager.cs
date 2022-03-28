@@ -15,10 +15,15 @@ public class DiskDropManager : MonoBehaviour
     MicroGameManager microGameManager;
     AudioManager audioManagement;
     AudioSource discDroppedSound;
+    float positionA;
+    float positionB;
+    bool movingR;
+    float force = 2.0f;
 
     private void Awake()
     {
         audioManagement = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        positionA = transform.position.x;
     }
 
     void Start() {
@@ -44,14 +49,41 @@ public class DiskDropManager : MonoBehaviour
         }
 
         if (Input.GetKeyDown("space") && diskNum < 4) {
-            Instantiate(disksArray[diskNum], transform.position, transform.rotation);
+            SpawnDisk();
             diskNum++;
             discDroppedSound.PlayOneShot(audioManagement.soundEffects[3]);
             if (diskNum >= diskArrayLength) {
                 StartCoroutine(CountDown());
             }
+        }        
+    }
+
+    void LateUpdate() {
+        positionB = transform.position.x;
+        if (positionB > positionA) {
+            movingR = true;
+        }
+        else {
+            movingR = false;
+        }
+        positionA = transform.position.x;
+    }
+
+    void SpawnDisk() {
+
+        Rigidbody rb;
+
+        GameObject newDisk = Instantiate(disksArray[diskNum], transform.position, transform.rotation)
+        as GameObject;
+        rb = newDisk.GetComponent<Rigidbody>();
+        if (movingR) {
+            rb.AddForce(0, 0, force, ForceMode.Impulse);
+        }
+        else {
+            rb.AddForce(0, 0, -force, ForceMode.Impulse);
         }
     }
+
 
     IEnumerator CountDown() {
         yield return new WaitForSeconds(2f);

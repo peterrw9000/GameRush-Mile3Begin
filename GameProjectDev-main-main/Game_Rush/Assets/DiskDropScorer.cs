@@ -8,6 +8,8 @@ public class DiskDropScorer : MonoBehaviour
 
     GameObject player;
     PlayerHealth playerHealth;
+    //public int timesActive;
+    public int score;
 
     // Start is called before the first frame update
     void Start() {
@@ -24,6 +26,11 @@ public class DiskDropScorer : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Cylinder") {
             playerHealth.currentHealth += 25;
+            score++;
+        }
+        if (score % 4 == 0) {
+            playerHealth.timer = 4;
+            playerHealth.StartTimer();
         }
     }
 }
