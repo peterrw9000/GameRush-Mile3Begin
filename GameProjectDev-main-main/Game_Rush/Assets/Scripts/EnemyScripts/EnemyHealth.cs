@@ -46,7 +46,8 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= amount;
 
         if (currentHealth <= 0 && !isDead) {
-            Death();
+            playerMover.enemiesDestroyed++;
+            Death();            
             isDead = true;
         }
     }
@@ -59,8 +60,7 @@ public class EnemyHealth : MonoBehaviour
         else
         {
             enemyDeathSounds.PlayOneShot(audioManagement.soundEffects[6]);
-        }
-        playerMover.enemiesDestroyed++;
+        }        
         Explode();
         Destroy(gameObject, .2f);
     }

@@ -8,6 +8,8 @@ public class PlayerMover : MonoBehaviour
     public EnemySpawner enemySpawner;
     Animator anim;
     [SerializeField] int enemies;
+    [SerializeField] float timer = 1.0f;
+    [SerializeField] bool timerStarted = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +21,26 @@ public class PlayerMover : MonoBehaviour
     void Update()
     {
         enemies = enemySpawner.enemiesList.Count;
-
-        if (enemiesDestroyed >= enemySpawner.enemiesList.Count) {
-            MovePlayer();
+        if (enemiesDestroyed >= enemies) {
+            StartTimer();
         }
 
         if (Input.GetKeyDown("m")) {
             MovePlayer();
         }
+       if (timerStarted == true) {
+            timer -= Time.deltaTime;
+        }
+        if (timer <= 0) {
+            MovePlayer();
+        }
+
     }
+
+    void StartTimer() {
+        timerStarted = true;
+    }
+
 
     public void MovePlayer() {
         anim.SetTrigger("movePlayer");
@@ -38,5 +51,13 @@ public class PlayerMover : MonoBehaviour
 
     public void PausePlayer(){
         anim.speed = 0.0f;
+        timerStarted = false;
+        timer = 1.0f;
     }
 }
+
+/*public void WaveSpawn() {
+    StartCoroutine(StartSpawn());
+}
+
+IEnumerator StartSpawn() {*/
