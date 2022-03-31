@@ -8,12 +8,19 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
 
     bool isDead = false;
+    public bool grounded = false;
 
     public PlayerMover playerMover;
     public GameObject explosion;
 
     AudioManager audioManagement;
     AudioSource enemyDeathSounds;
+    EnemyHitFlash hitFlash;
+
+    public Transform groundCheck;
+    public LayerMask whatGround;
+    RaycastHit hit;
+    public float range = 0.5f;
 
     private void Awake()
     {
@@ -26,14 +33,21 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = startingHealth;
         playerMover = FindObjectOfType<PlayerMover>();
         enemyDeathSounds = GetComponent<AudioSource>();
+        hitFlash = GetComponent<EnemyHitFlash>();
     }
 
     // Update is called once per frame
-    void LateUpdate() {
+    void Update()
+    {
+        if (Physics.Raycast(groundCheck.position, Vector3.down, range, whatGround))
+        {
+            grounded = true;
+        }
     }
 
     public void TakeDamage(int amount, Vector3 hitPoint) {
         currentHealth -= amount;
+
         if (currentHealth <= 0) {
             Death();
         }
@@ -41,10 +55,12 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int amount) {
         currentHealth -= amount;
-        if (currentHealth <= 0 && !isDead ) {
-            Death();
-            isDead = true;
+        hitFlash.TurnMeshOff();
+        hitFlash.Invoke("TurnMeshOn", 0.1f);
+        if (currentHealth <= 0 && !isDead) {
             playerMover.enemiesDestroyed++;
+            Death();            
+            isDead = true;
         }
     }
 

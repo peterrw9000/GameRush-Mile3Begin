@@ -14,7 +14,7 @@ public class EnemyAttackRanged : MonoBehaviour
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
     Transform weakPoint;
-    float shootingDelay = .5f;
+    float shootingDelay = .75f;
     float shootingTimer = 0f;
     AudioManager audioManagement;
     AudioSource enemyLaserSound;
@@ -48,22 +48,15 @@ public class EnemyAttackRanged : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (!paused) { 
-                if (timeSinceAwake <= timeTillAttack) {
-                    colorLerp = (timeSinceAwake += Time.deltaTime) / timeTillAttack;
-                }
-                else {
-                    colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
-                    Shoot();
-                    if (shootingTimer <= shootingDelay) {
-                        shootingTimer += Time.deltaTime;
-                    }
-                    else {
-                        playerHealth.TakeDamage(attackDamage);
-                        shootingTimer = 0;
-                    }
-                }
-            renderer.material.color = Color.Lerp(Color.white, Color.red, colorLerp);
+        if (!paused)
+        {
+            shootingTimer += Time.deltaTime;
+            if (enemyHealth.grounded == true && shootingTimer >= shootingDelay && Time.timeScale != 0)
+            {
+                //colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
+                Shoot();
+            }
+            //renderer.material.color = Color.Lerp(Color.white, Color.red, colorLerp);
         }
     }
 
@@ -73,6 +66,8 @@ public class EnemyAttackRanged : MonoBehaviour
             shootLine.enabled = true;
             shootLine.SetPosition(0, weakPoint.position);
             shootLine.SetPosition(1, player.transform.position);
+            playerHealth.TakeDamage(attackDamage);
+            shootingTimer = 0;
         }
     }
 }
