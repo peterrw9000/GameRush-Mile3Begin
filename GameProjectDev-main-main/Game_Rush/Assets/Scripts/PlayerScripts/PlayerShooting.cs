@@ -85,7 +85,7 @@ public class PlayerShooting : MonoBehaviour {
                 }
             }
             laserFire.SetPosition(1, hit.point);
-            Debug.Log(hit.collider.gameObject.name.ToString());
+            //Debug.Log(hit.collider.gameObject.name.ToString());
         }
         return;
     }

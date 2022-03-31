@@ -5,11 +5,15 @@ using UnityEngine;
 public class PlayerMover : MonoBehaviour
 {
     public int enemiesDestroyed = 0;
+    [SerializeField] int maxScore = 0;
     public EnemySpawner enemySpawner;
     Animator anim;
     [SerializeField] int enemies;
     [SerializeField] float timer = 1.0f;
     [SerializeField] bool timerStarted = true;
+    public bool playerMoved = false;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +25,10 @@ public class PlayerMover : MonoBehaviour
     void Update()
     {
         enemies = enemySpawner.enemiesList.Count;
-        if (enemiesDestroyed >= enemies) {
+        if (enemiesDestroyed > maxScore) {
+            enemiesDestroyed = maxScore;
+        }
+        if (enemiesDestroyed == maxScore) {
             StartTimer();
         }
 
@@ -32,12 +39,20 @@ public class PlayerMover : MonoBehaviour
             timer -= Time.deltaTime;
         }
         if (timer <= 0) {
-            MovePlayer();
+            if (!playerMoved) {
+                MovePlayer();
+                timerStarted = false;
+            }
         }
     }
 
     void StartTimer() {
         timerStarted = true;
+    }
+
+    int CalcMaxScore() {
+        maxScore += enemySpawner.waveSizeArray[enemySpawner.waveKey];
+        return maxScore;
     }
 
 
@@ -46,12 +61,16 @@ public class PlayerMover : MonoBehaviour
         if (anim.speed == 0.0f) {
             anim.speed = 1f;
         }
+        Debug.Log("Moving Player!");
+        playerMoved = true;
+        //Debug.Break();
     }
 
     public void PausePlayer(){
         anim.speed = 0.0f;
         timerStarted = false;
         timer = 1.0f;
+        CalcMaxScore();
     }
 }
 

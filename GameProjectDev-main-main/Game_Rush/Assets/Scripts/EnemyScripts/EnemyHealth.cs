@@ -29,14 +29,11 @@ public class EnemyHealth : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void LateUpdate() {
     }
 
     public void TakeDamage(int amount, Vector3 hitPoint) {
         currentHealth -= amount;
-
         if (currentHealth <= 0) {
             Death();
         }
@@ -44,11 +41,10 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int amount) {
         currentHealth -= amount;
-
-        if (currentHealth <= 0 && !isDead) {
-            playerMover.enemiesDestroyed++;
-            Death();            
+        if (currentHealth <= 0 && !isDead ) {
+            Death();
             isDead = true;
+            playerMover.enemiesDestroyed++;
         }
     }
 

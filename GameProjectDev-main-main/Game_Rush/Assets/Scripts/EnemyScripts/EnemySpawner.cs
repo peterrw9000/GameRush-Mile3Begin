@@ -74,9 +74,9 @@ public class EnemySpawner : MonoBehaviour {
             0, 1, 0, 1,
             0, 1, 0, 1,
                        };
-    int[] waveSizeArray = { 6, 5, 9, 1, 2, 3, 4, 5, 6, 7 };
+    public int[] waveSizeArray = { 6, 5, 9, 1, 2, 3, 4, 5, 6, 7 };
     int spawnKey = 0;
-    int waveKey = 0;
+    public int waveKey = 0;
 
     protected bool paused;
     void OnPauseGame() {
@@ -117,7 +117,7 @@ public class EnemySpawner : MonoBehaviour {
             yield return new WaitForSeconds(Random.Range(1.0f, 2.0f));
         }
         waveKey++;
-        Debug.Log("Enemy Wave Size = " + enemiesList.Count);
+        //Debug.Log("Enemy Wave Size = " + enemiesList.Count);
     }
 
     void Update()
