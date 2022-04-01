@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHitFlash : MonoBehaviour
 {
-    public MeshRenderer[] enemyParts;
+    public SkinnedMeshRenderer[] enemyParts;
     //EnemyHealth eHealth;
 
     // Start is called before the first frame update
