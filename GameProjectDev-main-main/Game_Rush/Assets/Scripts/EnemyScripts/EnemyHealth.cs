@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class EnemyHealth : MonoBehaviour
 {
     public int startingHealth = 10;
@@ -12,6 +12,7 @@ public class EnemyHealth : MonoBehaviour
 
     public PlayerMover playerMover;
     public GameObject explosion;
+    public Slider enemyHPBar;
 
     AudioManager audioManagement;
     AudioSource enemyDeathSounds;
@@ -62,6 +63,7 @@ public class EnemyHealth : MonoBehaviour
             Death();            
             isDead = true;
         }
+        enemyHPBar.value = (float)currentHealth / startingHealth;
     }
 
     public void Death() {
