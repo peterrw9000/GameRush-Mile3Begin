@@ -13,7 +13,8 @@ public class PlayerHealth : MonoBehaviour
     public MicroGameManager microGames;
     public int playerLives = 5;
 
-    public Image playerHPBar; 
+    ///public Image playerHPBar; 
+    public Slider playerHPBar; 
 
     public float timer;
     [SerializeField] bool timerStarted = true;
@@ -65,8 +66,13 @@ public class PlayerHealth : MonoBehaviour
             if (currentHealth <= 0 && isDead == false) {
                 Death();
             }
-            playerHPBar.fillAmount = (float)currentHealth / startingHealth;
+            ///playerHPBar.fillAmount = (float)currentHealth / startingHealth;
+            CalcHealthSlider();
         }
+    }
+
+    public void CalcHealthSlider(){
+        playerHPBar.value = (float)currentHealth / startingHealth;
     }
 
     public void Death() {
