@@ -50,6 +50,8 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+    bool attackPlayer;
+
     void Move() {
         transform.position = Vector3.Lerp(transform.position, currentTarget.position,
         (speed * Time.deltaTime) / Vector3.Distance(transform.position, currentTarget.position)
@@ -58,14 +60,17 @@ public class EnemyMovement : MonoBehaviour
         if (Vector3.Distance(transform.position, currentTarget.position) < dist) {
             targetIndex++;
             if (targetIndex >= targets.Count) {
-                targetIndex = 0;
+                //targetIndex = 0;
+                attackPlayer = true;
             }
             updateTarget();
         }
     }
 
     void updateTarget() {
-        if (moveTimer <= timeTillAttack) {
+        if (
+            //moveTimer <= timeTillAttack
+            !attackPlayer ) {
             currentTarget = targets[targetIndex];
         }
         else {

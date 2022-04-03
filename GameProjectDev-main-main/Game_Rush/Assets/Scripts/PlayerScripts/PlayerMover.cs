@@ -12,7 +12,7 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] float timer = 1.0f;
     [SerializeField] bool timerStarted = true;
     public bool playerMoved = false;
-
+    public Transform[] fightZones;
 
 
     // Start is called before the first frame update
@@ -31,7 +31,6 @@ public class PlayerMover : MonoBehaviour
         if (enemiesDestroyed == maxScore) {
             StartTimer();
         }
-
         if (Input.GetKeyDown("m")) {
             MovePlayer();
         }
@@ -42,6 +41,15 @@ public class PlayerMover : MonoBehaviour
             if (!playerMoved) {
                 MovePlayer();
                 timerStarted = false;
+            }
+        }
+
+        for (int i = 0; i < 10; ++i) {
+            if (Input.GetKeyDown("" + i)) {
+                transform.position = fightZones[i].position;
+                Debug.Log(i);
+                if(anim.enabled) anim.enabled = !anim.enabled;
+                //Debug.Break();
             }
         }
     }
