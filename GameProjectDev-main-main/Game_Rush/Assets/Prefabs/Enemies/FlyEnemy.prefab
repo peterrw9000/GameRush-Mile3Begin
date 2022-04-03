@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 3306198291071839848}
   - component: {fileID: 3306198291071839851}
   - component: {fileID: 8696977966810158956}
+  - component: {fileID: 1008835763879720319}
   m_Layer: 0
   m_Name: FlyEnemy
   m_TagString: Enemy
@@ -530,6 +531,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1008835763879720319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306198291071839855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae46b552f540f734bac43d9657974dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyParts: []
 --- !u!1 &7136054022753962614
 GameObject:
   m_ObjectHideFlags: 0
