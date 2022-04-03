@@ -68,6 +68,7 @@ public class EnemyAttackRanged : MonoBehaviour
             shootLine.SetPosition(1, player.transform.position);
             playerHealth.TakeDamage(attackDamage);
             shootingTimer = 0;
+            //Debug.Break();
         }
     }
 }
