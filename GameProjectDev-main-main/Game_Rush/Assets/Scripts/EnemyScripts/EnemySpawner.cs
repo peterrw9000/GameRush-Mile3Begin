@@ -38,11 +38,22 @@ public class EnemySpawner : MonoBehaviour {
             0, 7, 8, 18, 
             0, 0, 1, 18,
             0, 8, 9, 18, 
-            //4th Wave - 1
-            0, 1, 0, 1,
-            //5th Wave - 2
-            0, 1, 0, 1,
-            0, 1, 0, 1,
+            //4th Wave - 8
+            2, 6, 8, 18,
+            2, 2, 2, 18,
+            1, 4, 5, 14,
+            1, 3, 4, 12,
+            1, 5, 6, 16,            
+            1, 5, 6, 16,
+            1, 3, 4, 12,
+            1, 4, 5, 14,
+            //5th Wave - 6
+            4, 3, 12, 11,
+            4, 5, 16, 17,
+            3, 1, 11, 18,
+            3, 7, 17, 18,
+            0, 2, 2, 10,
+            0, 6, 8, 10,
             //6th Wave - 3
             0, 1, 0, 1,
             0, 1, 0, 1,
@@ -75,7 +86,7 @@ public class EnemySpawner : MonoBehaviour {
             0, 1, 0, 1,
             0, 1, 0, 1,
                        };
-    public readonly int[] waveSizeArray = { 6, 7, 9, 1, 2, 3, 4, 5, 6, 7 };
+    public readonly int[] waveSizeArray = { 6, 7, 9, 8, 6, 3, 4, 5, 6, 7 };
     int spawnKey = 0;
     public int waveKey = 0;
 

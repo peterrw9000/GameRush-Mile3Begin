@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d343a36a9927e4fb1967b1c755919c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 4
   currentHealth: 0
   grounded: 0
   playerMover: {fileID: 0}
