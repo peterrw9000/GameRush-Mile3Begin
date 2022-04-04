@@ -341,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72860587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 450}
+  m_LocalPosition: {x: 44.5, y: 0, z: 653.7}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 474077654}
@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9280b6f225b8984597a819c09c25d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDPS: 1
+  laserDPS: 2
   range: 10000
   fireRate: 0.3
   overHeat: {fileID: 0}
@@ -1725,7 +1725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397720972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 750}
+  m_LocalPosition: {x: -35, y: 0, z: 1652}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 474077654}
@@ -1961,8 +1961,8 @@ Transform:
   - {fileID: 876093659}
   - {fileID: 1777544067}
   - {fileID: 72860588}
-  - {fileID: 1646792859}
   - {fileID: 1807590412}
+  - {fileID: 1646792859}
   - {fileID: 697472181}
   - {fileID: 397720973}
   m_Father: {fileID: 0}
@@ -2835,7 +2835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697472180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 675}
+  m_LocalPosition: {x: -65, y: 0, z: 1481}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 474077654}
@@ -3473,7 +3473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876093658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 300}
+  m_LocalPosition: {x: 35.4, y: 0, z: 374.5}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 474077654}
@@ -5277,7 +5277,7 @@ GameObject:
   - component: {fileID: 1646792861}
   - component: {fileID: 1646792860}
   m_Layer: 2
-  m_Name: FZ6
+  m_Name: FZ7
   m_TagString: FightZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5291,11 +5291,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646792858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 525}
+  m_LocalPosition: {x: -59, y: 0, z: 1091}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 474077654}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1646792860
 Rigidbody:
@@ -5798,7 +5798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777544066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 375}
+  m_LocalPosition: {x: -91.4, y: 0, z: 410.5}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 474077654}
@@ -6061,7 +6061,7 @@ GameObject:
   - component: {fileID: 1807590414}
   - component: {fileID: 1807590413}
   m_Layer: 2
-  m_Name: FZ7
+  m_Name: FZ6
   m_TagString: FightZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6075,11 +6075,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807590411}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 600}
+  m_LocalPosition: {x: 213, y: 0, z: 1029}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 474077654}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1807590413
 Rigidbody:

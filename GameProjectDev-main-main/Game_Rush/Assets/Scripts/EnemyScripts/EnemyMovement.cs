@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
     public List<Transform> targets = new List<Transform>();
     int targetIndex = 0;
     Transform currentTarget;
-    float speed = 5;
+    public float speed = 5;
     float dist = 1;
     [SerializeField]
     float moveTimer = 0f;

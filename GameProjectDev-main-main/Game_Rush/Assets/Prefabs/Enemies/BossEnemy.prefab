@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
+  speed: 5
   moveTimer: 0
   timeTillAttack: 10
   paused: 0
@@ -278,10 +279,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3052529
-  m_Height: 1.3796247
+  m_Radius: 0.40551987
+  m_Height: 9.363907
   m_Direction: 2
-  m_Center: {x: 0, y: 0.89753604, z: -0.061229527}
+  m_Center: {x: 1.09707496e-16, y: 2.1658115, z: 0.054780006}
 --- !u!65 &986458052447917342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -293,8 +294,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25875568, y: 0.586817, z: 0.24869247}
-  m_Center: {x: -0.017126262, y: 0.30677676, z: -0.087017216}
+  m_Size: {x: 0.25875568, y: 3.3392012, z: 0.8322062}
+  m_Center: {x: -0.017126262, y: 1.6161815, z: 0.03802085}
 --- !u!82 &-3872253194738611912
 AudioSource:
   m_ObjectHideFlags: 0
@@ -728,7 +729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7611212980159341097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.657, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1341550559805388755}

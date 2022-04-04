@@ -369,6 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
+  speed: 15
   moveTimer: 0
   timeTillAttack: 10
   paused: 0
@@ -398,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d343a36a9927e4fb1967b1c755919c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 3
   currentHealth: 0
   grounded: 0
   playerMover: {fileID: 0}
@@ -433,8 +434,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.42576635
-  m_Center: {x: 0, y: 1.0255663, z: 0}
+  m_Radius: 0.49082172
+  m_Center: {x: 0.06505525, y: 1.0255663, z: 3.6312514e-17}
 --- !u!82 &8696977966810158956
 AudioSource:
   m_ObjectHideFlags: 0
