@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
+  speed: 5
   moveTimer: 0
   timeTillAttack: 10
   paused: 0
