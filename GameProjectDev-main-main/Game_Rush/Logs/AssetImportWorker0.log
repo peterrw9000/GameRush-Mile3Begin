@@ -156,3 +156,1069 @@ Received Import Request.
 Start importing Assets/Scenes/BossMicrogame.unity using Guid(a0a361ddbc1687245bd9a6c94c14473c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfef6534107afab28a6a763c7b025dac') in 0.026399 seconds 
   Import took 0.062375 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006863 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.487 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1488ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1247ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (481ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (270ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.8 MB.
+System memory in use after: 125.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3273.
+Total: 4.088000 ms (FindLiveObjects: 0.284900 ms CreateObjectMapping: 0.146800 ms MarkObjects: 3.589500 ms  DeleteObjects: 0.065500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 12948.506583 seconds.
+  path: Assets/Models
+  artifactKey: Guid(7241d4697dfdbc34facd10e2dd75a368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(7241d4697dfdbc34facd10e2dd75a368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c0af71d696bf22106feba6b19bfe2b') in 0.118910 seconds 
+  Import took 0.303783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 129.832519 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(83de39ff55a19c94d94025d9654c6bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(83de39ff55a19c94d94025d9654c6bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3d97d04fa85d3bf2b5b6a8462cea39') in 0.011555 seconds 
+  Import took 0.057216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.348925 seconds.
+  path: Assets/MicroGames/DiskDropGame
+  artifactKey: Guid(78a5a2d834866b344b01547fbc66c526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame using Guid(78a5a2d834866b344b01547fbc66c526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d6ac5369266d109a1b2ce126a52bc3') in 0.010989 seconds 
+  Import took 0.064220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.563807 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs
+  artifactKey: Guid(3f7c15538f4d7cc418aae13e23359185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs using Guid(3f7c15538f4d7cc418aae13e23359185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5178a965f579e81cc3197ee29c72ce8') in 0.008528 seconds 
+  Import took 0.056882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.447717 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60561c70b91d361b5a558e677514fe1d') in 0.502854 seconds 
+  Import took 0.519530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.244850 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab
+  artifactKey: Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab using Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1f47ad0444b8b025f5d696a1947e2c') in 0.031832 seconds 
+  Import took 0.082768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.075327 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e8370d3cc7f79aaa7361a2719eb726') in 0.041793 seconds 
+  Import took 0.095010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.282642 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b371aa60b36241754d82e73550c22ef') in 0.030018 seconds 
+  Import took 0.055408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 141.822987 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7de27432a2c6edb9f3f339b5b4d3616') in 0.090377 seconds 
+  Import took 0.097375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.195525 seconds.
+  path: Assets/Materials/Grid.mat
+  artifactKey: Guid(f7ddaa8488a406e4787c459c19732ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grid.mat using Guid(f7ddaa8488a406e4787c459c19732ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89712f6ad845bc21ad2eea54dc3ad0ae') in 0.278337 seconds 
+  Import took 0.307207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.916615 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab
+  artifactKey: Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab using Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f4b2ea3689db86b0875f9fafca0c78') in 0.028212 seconds 
+  Import took 0.055415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50225212a68c524d7943c0f922e31d06') in 0.031404 seconds 
+  Import took 0.086069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.567934 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86658a2b150d38d1ef9e04115c00ea8a') in 0.028799 seconds 
+  Import took 0.036218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.736889 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '721d0d0850207be67d735886e6689280') in 0.037150 seconds 
+  Import took 0.045348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.150516 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01d12382a8a5a53d969a456e6a4a515') in 0.027608 seconds 
+  Import took 0.035659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.169100 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff35b2d1efd146c076957b8fe5f6b616') in 0.038972 seconds 
+  Import took 0.058255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.091035 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd2364b9f546bf3234a2baaaa01425e1') in 0.032583 seconds 
+  Import took 0.057894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.617181 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd29bb15847f868d939c6e7b38810319') in 0.031713 seconds 
+  Import took 0.060940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.198310 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cf5bb8594757f2443582d8b5755837') in 0.036309 seconds 
+  Import took 0.048066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.363889 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177aaa8f68bf9e192b0be3694c71d604') in 0.032261 seconds 
+  Import took 0.051737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.857449 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0009824c4ee09893fe1b359e6dcff3') in 0.026090 seconds 
+  Import took 0.042302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.666338 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08578aa50b7ad9f4cc24c3739bd8c5b1') in 0.035638 seconds 
+  Import took 0.048552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.156324 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd62e72708737d0b6acdd9d70acd62af') in 0.058398 seconds 
+  Import took 0.084222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.990247 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0b62552533be5f4915fb81e074595e') in 0.029942 seconds 
+  Import took 0.050077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.758547 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f975a76ad8d74d6cbb6c49c10d7887ff') in 0.033791 seconds 
+  Import took 0.042101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.241809 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2b2dea9c87c842bd774adc602395b7') in 0.038227 seconds 
+  Import took 0.047239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.426811 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ed8e87118028f9c31b913f53e3a0c7') in 0.035231 seconds 
+  Import took 0.042606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.549152 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01336234fbb6c3ab07dc2511ab248f45') in 0.033672 seconds 
+  Import took 0.060874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.001872 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1985129fb611132062653fc0309df978') in 0.035026 seconds 
+  Import took 0.044323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.301196 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923eb6a9fc78adbfc0daf8df996d1273') in 0.032561 seconds 
+  Import took 0.062224 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010221 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.735 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1736ms)
+		BeginReloadAssembly (231ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (92ms)
+		EndReloadAssembly (1417ms)
+			LoadAssemblies (153ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (452ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (555ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (391ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.5 MB.
+System memory in use after: 130.7 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3354.
+Total: 4.204900 ms (FindLiveObjects: 0.366000 ms CreateObjectMapping: 0.183900 ms MarkObjects: 3.591600 ms  DeleteObjects: 0.062200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 237.205440 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5090c138ddfb9bad3c33cbe4b0813c') in 0.259522 seconds 
+  Import took 0.281262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.748379 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab
+  artifactKey: Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab using Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6892a43bd46f47ec91d3974cb37ee698') in 0.033469 seconds 
+  Import took 0.042459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.700047 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825b1b64ad24992fc9d63311e2a3afc7') in 0.035213 seconds 
+  Import took 0.117372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.679972 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f887247756161be39fb8426d4cbf97cf') in 0.027289 seconds 
+  Import took 0.051999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.006980 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6591892483c207025d2c2e1aed0ae8') in 0.027230 seconds 
+  Import took 0.035016 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011867 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.639 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1640ms)
+		BeginReloadAssembly (206ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (1324ms)
+			LoadAssemblies (153ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (476ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (450ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (295ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.6 MB.
+System memory in use after: 130.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3392.
+Total: 6.009400 ms (FindLiveObjects: 0.409600 ms CreateObjectMapping: 0.186800 ms MarkObjects: 5.388600 ms  DeleteObjects: 0.022900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 102.378169 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6072ae00db663bf880cc45222122e2') in 0.292527 seconds 
+  Import took 0.302515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.430762 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf90aff7eae793b79661408d357ec40') in 0.030721 seconds 
+  Import took 0.045611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.071114 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab
+  artifactKey: Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab using Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a950c8d49e22ddcfc2e6447082a8724d') in 0.029389 seconds 
+  Import took 0.036984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.837673 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e53a320f7763c9b168e0f1d37ec7882') in 0.027135 seconds 
+  Import took 0.036029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.852892 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77117fa3752d6f3e774a1936766b9eb') in 0.028093 seconds 
+  Import took 0.057807 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008540 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.471 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1471ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1234ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (438ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (407ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (265ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.7 MB.
+System memory in use after: 131.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3430.
+Total: 6.251200 ms (FindLiveObjects: 0.545600 ms CreateObjectMapping: 0.523800 ms MarkObjects: 5.141300 ms  DeleteObjects: 0.038900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 30.904805 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5dfb04f6a714bd3c4b380fc00bb33a0') in 0.281180 seconds 
+  Import took 0.290369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.654266 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c84ace9f51e62ae86b8c0903b6c662') in 0.031071 seconds 
+  Import took 0.063468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.869133 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d657d07227c1c9f80d1cff5ef0dbc2e') in 0.036531 seconds 
+  Import took 0.051817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.975630 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1126b7e69ec6670c94f01558b3d608f0') in 0.029147 seconds 
+  Import took 0.048123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.795831 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549e6f563f48e8c49af74d414a5d7034') in 0.040569 seconds 
+  Import took 0.089058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.827227 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0028eb687303fe7c9b79483bd87df39b') in 0.059899 seconds 
+  Import took 0.090829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.098099 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab
+  artifactKey: Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab using Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec89b6f36cc5659d3af5d46ce20af6a') in 0.051932 seconds 
+  Import took 0.061954 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008987 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.033 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2034ms)
+		BeginReloadAssembly (223ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (77ms)
+		EndReloadAssembly (1693ms)
+			LoadAssemblies (175ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (631ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (539ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (149ms)
+				ProcessInitializeOnLoadAttributes (348ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.9 MB.
+System memory in use after: 131.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3468.
+Total: 6.287500 ms (FindLiveObjects: 0.524300 ms CreateObjectMapping: 0.304700 ms MarkObjects: 5.434200 ms  DeleteObjects: 0.022700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23.571812 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b771da7fa82378f4059bb9efa5701274') in 0.291162 seconds 
+  Import took 0.300825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.750295 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a59be7d20366dbbc5d8a55f9a85f91') in 0.027113 seconds 
+  Import took 0.057924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.264447 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bcd8a71ff03e105bd13f8735126e949') in 0.031420 seconds 
+  Import took 0.040537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.665339 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d79c4da1b19c5adfd396d40d6f86e5') in 0.047590 seconds 
+  Import took 0.058092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.645555 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94d61d575f16d5b7da1fc57e6fa4caf') in 0.051988 seconds 
+  Import took 0.084863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.388981 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263e3c2702d16b04133b8ca3ed91bcb4') in 0.037875 seconds 
+  Import took 0.065414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.000358 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab
+  artifactKey: Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (1).prefab using Guid(900a0bd1d0ef3f2409dd42eee5bf1ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb252edd558feed3909297fd3330872') in 0.032844 seconds 
+  Import took 0.040423 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010076 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.655 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1656ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (1395ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (462ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (435ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (267ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.1 MB.
+System memory in use after: 131.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3506.
+Total: 4.278800 ms (FindLiveObjects: 0.320300 ms CreateObjectMapping: 0.126300 ms MarkObjects: 3.752100 ms  DeleteObjects: 0.078900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 37.705257 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab
+  artifactKey: Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (2).prefab using Guid(8b125f870940cfd4d95797a823701611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1eaa91741328d84f2e418b75f004b9') in 0.217334 seconds 
+  Import took 0.224581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.019885 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab
+  artifactKey: Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (3).prefab using Guid(fa4dc093d19fdd04dbf3dbc68b745c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aecae97ad2f6f803719feecc19ce1576') in 0.031364 seconds 
+  Import took 0.041729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.471303 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab
+  artifactKey: Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder (4).prefab using Guid(22abc22b655ed5845b1cbd02c24a3bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17636962dcae87e7220cd5631fe3db3e') in 0.034961 seconds 
+  Import took 0.043274 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011519 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.704 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1705ms)
+		BeginReloadAssembly (205ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (77ms)
+		EndReloadAssembly (1407ms)
+			LoadAssemblies (149ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (469ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (485ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (182ms)
+				ProcessInitializeOnLoadAttributes (273ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3544.
+Total: 5.137600 ms (FindLiveObjects: 0.322800 ms CreateObjectMapping: 0.154100 ms MarkObjects: 4.636000 ms  DeleteObjects: 0.023100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007031 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.750 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1750ms)
+		BeginReloadAssembly (197ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1455ms)
+			LoadAssemblies (144ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (482ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (490ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (159ms)
+				ProcessInitializeOnLoadAttributes (299ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.3 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3546.
+Total: 9.253200 ms (FindLiveObjects: 0.630400 ms CreateObjectMapping: 0.325400 ms MarkObjects: 8.233500 ms  DeleteObjects: 0.061500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 255.760052 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b784dfcddb8204b1346485c12ce6ad') in 0.216108 seconds 
+  Import took 0.262658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.834873 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718cd7bd76574f7aed88ef909d9ce324') in 0.029120 seconds 
+  Import took 0.037043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.896079 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc47bb5dcfbbc5c36188e8a21bf7b23') in 0.029549 seconds 
+  Import took 0.037149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.503091 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a403b6a15197df86f3003f05c21c523e') in 0.028718 seconds 
+  Import took 0.038304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.399847 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fdfc99ff3aeb445c363a28b4c2fab95') in 0.020843 seconds 
+  Import took 0.028767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.731679 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21563a5ca6e36c7bf9a31bcc481a8c6a') in 0.026496 seconds 
+  Import took 0.047525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.196206 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea878c0a1adfd906a804a6eefd8a2ce7') in 0.030366 seconds 
+  Import took 0.039787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.232947 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0236ea0025e6da836e2a3f1b10db546') in 0.025902 seconds 
+  Import took 0.038373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.206562 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33fc09b2f7f9fe85d62dcdac20cdb3f') in 0.028588 seconds 
+  Import took 0.045542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.487373 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04635a1da44467e506294e5eeec6e77b') in 0.026768 seconds 
+  Import took 0.034686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.753226 seconds.
+  path: Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab
+  artifactKey: Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicroGames/DiskDropGame/Prefabs/Cylinder.prefab using Guid(f50a59537e4852f4ba5b19b2acd2c9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18636a3336edf5bb889cfa6be631119b') in 0.030684 seconds 
+  Import took 0.041164 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010316 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.928 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1929ms)
+		BeginReloadAssembly (174ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1644ms)
+			LoadAssemblies (171ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (528ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (615ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (32ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (74ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.4 MB.
+System memory in use after: 131.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3584.
+Total: 5.917100 ms (FindLiveObjects: 0.336300 ms CreateObjectMapping: 0.198900 ms MarkObjects: 5.351600 ms  DeleteObjects: 0.028400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
