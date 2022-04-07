@@ -23,7 +23,7 @@ public class ScrollingTestingPlayer : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         rb.velocity = new Vector3(h * speed, rb.velocity.y, v * speed);
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump/Fire"))
         {
             Jump();
         }
