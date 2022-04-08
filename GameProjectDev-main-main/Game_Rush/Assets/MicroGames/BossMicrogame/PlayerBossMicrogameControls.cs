@@ -9,6 +9,8 @@ public class PlayerBossMicrogameControls : MonoBehaviour
     [SerializeField]
     float range = 1;
 
+    public LayerMask thisEnemy;
+
     RaycastHit hit;
     Ray ray;
 
@@ -29,19 +31,11 @@ public class PlayerBossMicrogameControls : MonoBehaviour
         rb.velocity = new Vector3(h * speed, v * speed, 0);
         if (Input.GetButtonDown("Jump/Fire"))
         {
-            Shoot();
-        }
-    }
-
-    void Shoot()
-    {
-        Debug.DrawRay(transform.position, Vector3.up * range, Color.green);
-        if (Physics.Raycast(ray, out hit))
-        {
-            if (hit.collider.tag == "Enemy")
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, range, thisEnemy))
             {
                 HealthTest enemyHeal = hit.collider.GetComponent<HealthTest>();
                 enemyHeal.health--;
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
             }
         }
     }
