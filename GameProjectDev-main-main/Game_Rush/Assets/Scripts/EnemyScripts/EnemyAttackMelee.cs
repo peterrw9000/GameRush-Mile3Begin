@@ -41,6 +41,6 @@ public class EnemyAttackMelee : MonoBehaviour
         enemyMeleeSound.PlayOneShot(audioManagement.soundEffects[5]);
         playerHealth.TakeDamage(attackDamage);
         playerMover.enemiesDestroyed++;
-        enemyHealth.Death();
+        enemyHealth.Death(0f);
     }
 }

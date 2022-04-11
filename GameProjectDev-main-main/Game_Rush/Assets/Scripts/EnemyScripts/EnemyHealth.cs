@@ -77,6 +77,19 @@ public class EnemyHealth : MonoBehaviour
         }        
         Explode();
         Destroy(gameObject, .2f);
+    }    
+    
+    public void Death(float deathTimer) {
+        if(gameObject.GetComponent<EnemyAttackRanged>() != null)
+        {
+            enemyDeathSounds.PlayOneShot(audioManagement.soundEffects[7]);
+        }
+        else
+        {
+            enemyDeathSounds.PlayOneShot(audioManagement.soundEffects[6]);
+        }        
+        Explode();
+        Destroy(gameObject, deathTimer);
     }
 
     void Explode() {
