@@ -79,22 +79,25 @@ public class PlayerShooting : MonoBehaviour {
             if (hit.collider.tag == "Enemy") {
                 if (hit.collider.TryGetComponent(out EnemyHealth eH)) {
                     EnemyHealth enemyHealth = eH;
-                        //hit.collider.GetComponent<EnemyHealth>();
+                    //hit.collider.GetComponent<EnemyHealth>();
                     if (enemyHealth != null) {
                         enemyHealth.TakeDamage(laserDPS);
                         DisplayDamageText(laserDPS);
                     }
                 }
-                else {
-                    BossHealth bossHealth = hit.collider.GetComponent<BossHealth>();
-                    if (bossHealth != null) {
-                        bossHealth.TakeDamage(laserDPS);
+                else if(hit.collider.TryGetComponent(out BossCore bC)) { 
+                    BossCore bossCore = bC;
+                    if (bossCore != null) {
+                        Debug.Log("Found Core!");
+                        bossCore.TryDamage(laserDPS);
                         DisplayDamageText(laserDPS);
                     }
                 }
+                else {
+                    Debug.Log(hit.collider.gameObject.name.ToString());
+                }
             }
             laserFire.SetPosition(1, hit.point);
-            //Debug.Log(hit.collider.gameObject.name.ToString());
         }
         return;
     }

@@ -44,14 +44,14 @@ public class PlayerMover : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < 10; ++i) {
+/*        for (int i = 0; i < 10; ++i) {
             if (Input.GetKeyDown("" + i)) {
                 transform.position = fightZones[i].position;
                 Debug.Log(i);
                 if(anim.enabled) anim.enabled = !anim.enabled;
                 //Debug.Break();
             }
-        }
+        }*/
     }
 
     void StartTimer() {

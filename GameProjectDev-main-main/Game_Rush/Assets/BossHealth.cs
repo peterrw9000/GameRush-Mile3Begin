@@ -10,6 +10,8 @@ public class BossHealth : MonoBehaviour {
 
     public int startingHealth = 10;
     public int currentHealth;
+    public int activeCore;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -25,6 +27,12 @@ public class BossHealth : MonoBehaviour {
                 BA.Shoot();
             }
         }
+
+        for (int i = 0; i < 10; ++i) {
+            if (Input.GetKeyDown("" + i)) {
+                activeCore = i;
+            }
+        }
     }
 
     public void TakeDamage(int amount) {
@@ -32,4 +40,4 @@ public class BossHealth : MonoBehaviour {
         enemyHPBar.value = (float)currentHealth / startingHealth;
     }
 
-    }
+}
