@@ -2496,3 +2496,333 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006731 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.554 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1555ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1277ms)
+			LoadAssemblies (151ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (424ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (455ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (308ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.5 MB.
+System memory in use after: 133.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3797.
+Total: 4.496600 ms (FindLiveObjects: 0.335900 ms CreateObjectMapping: 0.148100 ms MarkObjects: 3.949000 ms  DeleteObjects: 0.062200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 43373.623779 seconds.
+  path: Assets/Models/Enemies/Materials/Boss_002-mat_flyBody_001.mat
+  artifactKey: Guid(9aa05e9377cf8d6448319e30076be3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/Boss_002-mat_flyBody_001.mat using Guid(9aa05e9377cf8d6448319e30076be3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e812cbb1a3d46afce17c13364e8587') in 0.294217 seconds 
+  Import took 0.304395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000503 seconds.
+  path: Assets/Models/Enemies/Materials/mat_flyBody_001.mat
+  artifactKey: Guid(8a422fb2b2a48364ea89ffba51e81adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_flyBody_001.mat using Guid(8a422fb2b2a48364ea89ffba51e81adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292cd12f91fa5225d8386c4980533721') in 0.025837 seconds 
+  Import took 0.039921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Models/Enemies/Materials/mat_flyMetal_001.mat
+  artifactKey: Guid(d96ae48339bb3fc4294cb17c67da3ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_flyMetal_001.mat using Guid(d96ae48339bb3fc4294cb17c67da3ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7f8a76798a304ab76e6f53e1320f792') in 0.047589 seconds 
+  Import took 0.075086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Models/Enemies/Materials/mat_soldierCore_001.mat
+  artifactKey: Guid(85bd316a0c425b44eb34d50896b3afb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_soldierCore_001.mat using Guid(85bd316a0c425b44eb34d50896b3afb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a864747ac5df3203a6af7496ccad56') in 0.044459 seconds 
+  Import took 0.050814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Models/Enemies/Materials/Material #142.mat
+  artifactKey: Guid(519df19e273564f46bde2bc14b160f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/Material #142.mat using Guid(519df19e273564f46bde2bc14b160f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c5316c64b3c23ca6108aa374583bf6') in 0.026926 seconds 
+  Import took 0.037190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Models/Enemies/Materials/mat_soldierBody_001.mat
+  artifactKey: Guid(d52277aa561c30644afb4af211fd9d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_soldierBody_001.mat using Guid(d52277aa561c30644afb4af211fd9d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a91fba9e1c9217a6c832ed2f71eafc9') in 0.044379 seconds 
+  Import took 0.052016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Models/Enemies/Materials/matInfantry_002.mat
+  artifactKey: Guid(0dfab3f6a8acd824cb4e058f5d1a442b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/matInfantry_002.mat using Guid(0dfab3f6a8acd824cb4e058f5d1a442b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b57ffbaa0c6828cec2f82716084ae7') in 0.045185 seconds 
+  Import took 0.059458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Models/Enemies/Materials/materialTank_001.mat
+  artifactKey: Guid(07dd1e4c31458f846b18067d5a5c3d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/materialTank_001.mat using Guid(07dd1e4c31458f846b18067d5a5c3d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbbc9abfd3c102f9a1676c3eab3a7351') in 0.042099 seconds 
+  Import took 0.050989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Models/Enemies/Materials/Boss_002-mat_knightCore_001.mat
+  artifactKey: Guid(12cd0383dd9e8a04ea1f9b156e40c733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/Boss_002-mat_knightCore_001.mat using Guid(12cd0383dd9e8a04ea1f9b156e40c733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08cdf2d38709c7520622b7a52e13da2d') in 0.037121 seconds 
+  Import took 0.051557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Models/Enemies/Materials/matInfantry_003.mat
+  artifactKey: Guid(266ccedfd2df2224ca9f853d2776505c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/matInfantry_003.mat using Guid(266ccedfd2df2224ca9f853d2776505c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5360e923ac2427852f51ff8c07497a58') in 0.040181 seconds 
+  Import took 0.048871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Models/Enemies/Materials/mat_knightMetal_001.mat
+  artifactKey: Guid(57774d016a483974499c6a25f6700c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_knightMetal_001.mat using Guid(57774d016a483974499c6a25f6700c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee161914a2f1c6aa34f57a9eac8ca04c') in 0.041370 seconds 
+  Import took 0.048846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Models/Enemies/Materials/materialInfantry_001.mat
+  artifactKey: Guid(904abd9165812a14a81475e8df20da93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/materialInfantry_001.mat using Guid(904abd9165812a14a81475e8df20da93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4170ae996224f6edd86d9e6a961c16') in 0.034759 seconds 
+  Import took 0.048020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Models/Enemies/Materials/mat_soldierMetal_001.mat
+  artifactKey: Guid(70413490a12a1b1478a996cb31f94f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_soldierMetal_001.mat using Guid(70413490a12a1b1478a996cb31f94f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0f4eb86b0cf1b32af963d059d5c58d') in 0.036316 seconds 
+  Import took 0.042858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Models/Enemies/Materials/Material #2.mat
+  artifactKey: Guid(bec0e45c210d0cb429e6a9044e73d817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/Material #2.mat using Guid(bec0e45c210d0cb429e6a9044e73d817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bda4506ff16bf87f72b54fd2539125d') in 0.040890 seconds 
+  Import took 0.046287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Models/Enemies/Materials/mat_knightCore_001.mat
+  artifactKey: Guid(812b01dda8b65b04eb06bd38badbd3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_knightCore_001.mat using Guid(812b01dda8b65b04eb06bd38badbd3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9dfc66bf7949aae32366eb1c45e6a7') in 0.018646 seconds 
+  Import took 0.032733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Models/Enemies/Materials/Boss_002-Material #142.mat
+  artifactKey: Guid(428abbf6162fe0043a85928c16530903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/Boss_002-Material #142.mat using Guid(428abbf6162fe0043a85928c16530903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2fc6210f4240e9ccfc15817b96cf573') in 0.036533 seconds 
+  Import took 0.044905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Models/Enemies/Materials/materialTank_002.mat
+  artifactKey: Guid(02e4c659bdcefe445b4db0d810312fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/materialTank_002.mat using Guid(02e4c659bdcefe445b4db0d810312fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b17f20ec9ef4632cff7429a9008312') in 0.036392 seconds 
+  Import took 0.059389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Models/Enemies/Materials/matInfantry_001.mat
+  artifactKey: Guid(2d8996a68b5d3cd4c8d89f3f4353eb6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/matInfantry_001.mat using Guid(2d8996a68b5d3cd4c8d89f3f4353eb6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57701c501c07138ede2ca8bf6ca3cc58') in 0.039328 seconds 
+  Import took 0.047135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Models/Enemies/Materials/materialTank_003.mat
+  artifactKey: Guid(4f470bbfee66a2c4587ca228902db3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/materialTank_003.mat using Guid(4f470bbfee66a2c4587ca228902db3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e747ec38e5fdedc67de8fcf805a456a') in 0.060847 seconds 
+  Import took 0.066787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Models/Enemies/Materials/materialInfantry_002.mat
+  artifactKey: Guid(a6af50bd36ef9db438093cc9a79d245a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/materialInfantry_002.mat using Guid(a6af50bd36ef9db438093cc9a79d245a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07970e3f9b543d4434874a2f649f8663') in 0.050266 seconds 
+  Import took 0.057288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Models/Enemies/Materials/mat_soldierPaint_001.mat
+  artifactKey: Guid(05eff058b8acd3045b6617cde3e41f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_soldierPaint_001.mat using Guid(05eff058b8acd3045b6617cde3e41f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fafbc1646d8d12248cb1357a3a205d') in 0.057387 seconds 
+  Import took 0.064949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Models/Enemies/Materials/materialRocket_001.mat
+  artifactKey: Guid(ef20ddf9afa6fb448b75ef202a5eff80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/materialRocket_001.mat using Guid(ef20ddf9afa6fb448b75ef202a5eff80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53505baeed14df3f74122a58a8fa557') in 0.039068 seconds 
+  Import took 0.044718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Models/Enemies/Materials/mat_knightBody_001.mat
+  artifactKey: Guid(f54b9282e21505c419e873e5d9f1b317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Materials/mat_knightBody_001.mat using Guid(f54b9282e21505c419e873e5d9f1b317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10fd8b732888649edae49ec58c3bcdf') in 0.028956 seconds 
+  Import took 0.044291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1607.992846 seconds.
+  path: Assets/Textures/SDT_Team_3_textures/MudRough_4x4/TexturesCom_Ground_MudRough_4x4_1K_albedo.tif
+  artifactKey: Guid(ec26ba5caad2804469793f9f12a978fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/SDT_Team_3_textures/MudRough_4x4/TexturesCom_Ground_MudRough_4x4_1K_albedo.tif using Guid(ec26ba5caad2804469793f9f12a978fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4e96b9f3ea1a7aaa4d7d9199a09ee6') in 0.101198 seconds 
+  Import took 0.129689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000523 seconds.
+  path: Assets/Textures/SDT_Team_3_textures/MudRough_4x4/TexturesCom_Ground_MudRough_4x4_1K_roughness.tif
+  artifactKey: Guid(caf7718e49c6a1247b65e377ae83b015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/SDT_Team_3_textures/MudRough_4x4/TexturesCom_Ground_MudRough_4x4_1K_roughness.tif using Guid(caf7718e49c6a1247b65e377ae83b015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03981a1cea744229b7f2ea1ceadc3bdb') in 0.043541 seconds 
+  Import took 0.051001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Textures/SDT_Team_3_textures/MudRough_4x4/TexturesCom_Ground_MudRough_4x4_1K_ao.tif
+  artifactKey: Guid(a0ebdd45279614648923256bfc33d3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/SDT_Team_3_textures/MudRough_4x4/TexturesCom_Ground_MudRough_4x4_1K_ao.tif using Guid(a0ebdd45279614648923256bfc33d3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ce14cfae98111f92a6724c47739868') in 0.026758 seconds 
+  Import took 0.035621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Textures/SDT_Team_3_textures/MudRough_4x4/TexturesCom_Ground_MudRough_4x4_1K_normal.tif
+  artifactKey: Guid(802d4293ab19cd54885afcf90aabf513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/SDT_Team_3_textures/MudRough_4x4/TexturesCom_Ground_MudRough_4x4_1K_normal.tif using Guid(802d4293ab19cd54885afcf90aabf513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eceb3366ed3d58882659f9219d9d10f') in 0.031217 seconds 
+  Import took 0.040758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 900.952929 seconds.
+  path: Assets/Models/Knight SM_TEST
+  artifactKey: Guid(2f06321591e26ac45b5cb7b3546e206e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Knight SM_TEST using Guid(2f06321591e26ac45b5cb7b3546e206e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb7a8ee27bd4b95f1bbd04a80ebc842') in 0.011806 seconds 
+  Import took 0.027978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.958028 seconds.
+  path: Assets/Models/Enemies/Knight SM_TEST/Knight_SM@closed_IDLE.fbx
+  artifactKey: Guid(36b5559a80e33434082772597832e0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Knight SM_TEST/Knight_SM@closed_IDLE.fbx using Guid(36b5559a80e33434082772597832e0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b60af071e7c4e351271f53fc2d77c1') in 0.912850 seconds 
+  Import took 0.945437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000384 seconds.
+  path: Assets/Models/Enemies/Knight SM_TEST/Knight_SM@Open_IDLE.fbx
+  artifactKey: Guid(576a43885e2cb5d47b9787530162c12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Knight SM_TEST/Knight_SM@Open_IDLE.fbx using Guid(576a43885e2cb5d47b9787530162c12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8201dc97d9134b96541422d9fbd3fcfc') in 0.518444 seconds 
+  Import took 0.564764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/Models/Enemies/Knight SM_TEST/KnightSM@shield_OPEN02.fbx
+  artifactKey: Guid(c64d24c65bfec5342bb191a685e9d871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Knight SM_TEST/KnightSM@shield_OPEN02.fbx using Guid(c64d24c65bfec5342bb191a685e9d871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04e5cfa47ae7b1750e3f1e158a1989c') in 0.018550 seconds 
+  Import took 0.028170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Models/Enemies/Knight SM_TEST/KnightSM@shield_close01.fbx
+  artifactKey: Guid(2e38d8b595b7e65419bbcf87e4fab9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Knight SM_TEST/KnightSM@shield_close01.fbx using Guid(2e38d8b595b7e65419bbcf87e4fab9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d258d77ea2b5f0c17353741d93cf74') in 0.018123 seconds 
+  Import took 0.028129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000384 seconds.
+  path: Assets/Models/Enemies/Knight SM_TEST/KnightSM.fbx
+  artifactKey: Guid(b465439bab9cc624d9681cc6b454a44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Knight SM_TEST/KnightSM.fbx using Guid(b465439bab9cc624d9681cc6b454a44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ad9a8163aa03886a15c09a17410452') in 0.427863 seconds 
+  Import took 0.437116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Models/Enemies/Knight SM_TEST/KnightSM@walk01.fbx
+  artifactKey: Guid(d6037240cd1d7304aaeaa8b53ff191b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Enemies/Knight SM_TEST/KnightSM@walk01.fbx using Guid(d6037240cd1d7304aaeaa8b53ff191b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc7651d09669b0e083a281e64c45f28') in 0.018611 seconds 
+  Import took 0.025314 seconds .
+

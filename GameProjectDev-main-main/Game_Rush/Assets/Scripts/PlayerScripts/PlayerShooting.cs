@@ -73,15 +73,24 @@ public class PlayerShooting : MonoBehaviour {
     public void Shoot() {
         laserFire.SetPosition(0, laserOrigin.position);
         timer = 0f;
-
         laserFire.enabled = true;
         laserSound.PlayOneShot(audioManagement.soundEffects[0]);
         if (Physics.Raycast(ray, out hit)) {
             if (hit.collider.tag == "Enemy") {
-                EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();
-                if (enemyHealth != null) {
-                    enemyHealth.TakeDamage(laserDPS);
-                    DisplayDamageText(laserDPS);
+                if (hit.collider.TryGetComponent(out EnemyHealth eH)) {
+                    EnemyHealth enemyHealth = eH;
+                        //hit.collider.GetComponent<EnemyHealth>();
+                    if (enemyHealth != null) {
+                        enemyHealth.TakeDamage(laserDPS);
+                        DisplayDamageText(laserDPS);
+                    }
+                }
+                else {
+                    BossHealth bossHealth = hit.collider.GetComponent<BossHealth>();
+                    if (bossHealth != null) {
+                        bossHealth.TakeDamage(laserDPS);
+                        DisplayDamageText(laserDPS);
+                    }
                 }
             }
             laserFire.SetPosition(1, hit.point);
