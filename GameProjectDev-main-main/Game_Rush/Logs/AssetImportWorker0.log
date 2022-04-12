@@ -140,3 +140,78 @@ Received Import Request.
 Start importing Assets/Scripts/GameScripts/MicroGameManager.cs using Guid(f1a6ffd55b4b5fc42bd77f1a0848ffd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d09a8917100af567989b5ce5a7b29e5') in 0.150389 seconds 
   Import took 0.158155 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.416646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 78.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 12.723 seconds
+Domain Reload Profiling:
+	ReloadAssembly (12958ms)
+		BeginReloadAssembly (9509ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (1244ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (45ms)
+			CreateAndSetChildDomain (4857ms)
+		EndReloadAssembly (2988ms)
+			LoadAssemblies (982ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (681ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (1399ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (78ms)
+				BeforeProcessingInitializeOnLoad (165ms)
+				ProcessInitializeOnLoadAttributes (1130ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2721 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.3 MB.
+System memory in use after: 124.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3270.
+Total: 17.508800 ms (FindLiveObjects: 0.513400 ms CreateObjectMapping: 0.499500 ms MarkObjects: 16.362000 ms  DeleteObjects: 0.132100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 78921.762135 seconds.
+  path: Assets/Prefabs/Enemy 2.prefab
+  artifactKey: Guid(7269c2dba4ec41f4e90bb954906b46e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy 2.prefab using Guid(7269c2dba4ec41f4e90bb954906b46e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e94cfa53f8c6d48cd713b7e29982ca5') in 3.404353 seconds 
+  Import took 3.450682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(0b4204bc3ab243742a1dc6dfb36234aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(0b4204bc3ab243742a1dc6dfb36234aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9c683cbfb0c685cad2c9f41a562c38') in 0.113241 seconds 
+  Import took 0.142663 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

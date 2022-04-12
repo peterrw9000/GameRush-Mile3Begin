@@ -8,6 +8,7 @@ public class EnemyAttackRanged : MonoBehaviour
     float colorLerp;
     float timeSinceAwake = 0;
     public int timeTillAttack = 3;
+    public float timeAttack = 0;
     public int attackDamage = 10;
     LineRenderer shootLine;
     GameObject player;
@@ -50,11 +51,15 @@ public class EnemyAttackRanged : MonoBehaviour
     void Update() {
         if (!paused)
         {
-            shootingTimer += Time.deltaTime;
-            if (enemyHealth.grounded == true && shootingTimer >= shootingDelay && Time.timeScale != 0)
+            timeAttack += Time.deltaTime;
+            if (enemyHealth.grounded == true && timeAttack >= 3)
             {
-                //colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
-                Shoot();
+                shootingTimer += Time.deltaTime;
+                if (shootingTimer >= shootingDelay && Time.timeScale != 0)
+                {
+                    //colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
+                    Shoot();
+                }
             }
             //renderer.material.color = Color.Lerp(Color.white, Color.red, colorLerp);
         }
