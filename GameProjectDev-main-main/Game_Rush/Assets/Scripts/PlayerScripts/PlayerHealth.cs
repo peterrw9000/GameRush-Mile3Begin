@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public int damageTaken;
     public MicroGameManager microGames;
     public int playerLives = 5;
+    public Text damageTakenText;
 
     ///public Image playerHPBar; 
     public Slider playerHPBar; 
@@ -55,8 +56,8 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void DisplayGameText() {
-        if (GetComponentInChildren<Text>().gameObject.activeInHierarchy) { 
-            GetComponentInChildren<Text>().text = damageTaken.ToString() + " Damage Taken";
+        if (GetComponentInChildren<Text>().gameObject.activeInHierarchy) {
+            damageTakenText.text = damageTaken.ToString() + " Damage Taken";
         }
     }
 
