@@ -79,7 +79,6 @@ public class PlayerShooting : MonoBehaviour {
             if (hit.collider.tag == "Enemy") {
                 if (hit.collider.TryGetComponent(out EnemyHealth eH)) {
                     EnemyHealth enemyHealth = eH;
-                    //hit.collider.GetComponent<EnemyHealth>();
                     if (enemyHealth != null) {
                         enemyHealth.TakeDamage(laserDPS);
                         DisplayDamageText(laserDPS);
@@ -90,6 +89,7 @@ public class PlayerShooting : MonoBehaviour {
                     if (bossCore != null) {
                         bossCore.TryDamage(laserDPS);
                         //DisplayDamageText(laserDPS);
+                        Debug.Log(hit.collider.gameObject.name.ToString());
                     }
                 }
                 else {

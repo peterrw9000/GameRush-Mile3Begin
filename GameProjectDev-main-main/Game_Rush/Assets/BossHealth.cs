@@ -13,6 +13,7 @@ public class BossHealth : MonoBehaviour {
     public int currentHealth;
     public int activeCore;
 
+    SkinnedMeshRenderer[] skinnedMeshRenderers = new SkinnedMeshRenderer[3];
     Renderer[] renderers = new Renderer[3];
     int[] randomCores = new int[] { 0, 2 };
     float colorLerp;
@@ -21,10 +22,8 @@ public class BossHealth : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         currentHealth = startingHealth;
-
-
         for (int i = 0; i < (bossCores.Length); i++) {
-            renderers[i] = bossCores[i].GetComponent<Renderer>();
+            skinnedMeshRenderers[i] = bossCores[i].GetComponent<SkinnedMeshRenderer>();
         }
     }
 
@@ -46,7 +45,7 @@ public class BossHealth : MonoBehaviour {
 
         for (int i = 0; i < (bossCores.Length); i++) {
             if (activeCore == i) {
-                renderers[i].material.color = Color.Lerp(Color.white, Color.red, colorLerp);
+                skinnedMeshRenderers[i].material.color = Color.Lerp(Color.white, Color.red, colorLerp);
             }
         }
         colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
@@ -58,14 +57,14 @@ public class BossHealth : MonoBehaviour {
     }
 
     void ActivateCenterCore() {
-        activeCore = 1;
+        ActivateGivenCore(1);
     }
     
     void ActivateGivenCore(int c) {
         activeCore = c;
         for (int i = 0; i < (renderers.Length); i++) {
             if (activeCore != i) {
-                renderers[i].material.color = Color.red;
+                skinnedMeshRenderers[i].material.color = Color.red;
             }
         }
     }
@@ -73,6 +72,3 @@ public class BossHealth : MonoBehaviour {
         ActivateGivenCore(randomCores[Random.Range(0, randomCores.Length)]);
     }
 }
-
-//colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
-//renderers.material.color = Color.Lerp(Color.white, Color.red, colorLerp);
