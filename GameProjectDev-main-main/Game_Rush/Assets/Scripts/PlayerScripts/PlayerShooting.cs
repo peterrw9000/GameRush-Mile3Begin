@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerShooting : MonoBehaviour {
-    [SerializeField]
-    int laserDPS = 1;
+
+    public int laserDPS = 1;
 
     [SerializeField]
     float range = 1000;
@@ -88,9 +88,8 @@ public class PlayerShooting : MonoBehaviour {
                 else if(hit.collider.TryGetComponent(out BossCore bC)) { 
                     BossCore bossCore = bC;
                     if (bossCore != null) {
-                        Debug.Log("Found Core!");
                         bossCore.TryDamage(laserDPS);
-                        DisplayDamageText(laserDPS);
+                        //DisplayDamageText(laserDPS);
                     }
                 }
                 else {
@@ -102,7 +101,7 @@ public class PlayerShooting : MonoBehaviour {
         return;
     }
 
-    void DisplayDamageText(int damage) {
+    public void DisplayDamageText(int damage) {
         Vector3 mousePosition = Input.mousePosition;
         hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
         hitText.text = damage.ToString() + " Damage!";

@@ -411,8 +411,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 800a5bf5b8a6bc9408d9b72db68fecd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossGuns: []
+  bossGuns:
+  - {fileID: 5533402913345429793}
+  - {fileID: 8634111894009067525}
+  - {fileID: 4348053772654513782}
+  - {fileID: 7535997117645910240}
+  - {fileID: 4433229536359009967}
+  - {fileID: 5886153280506145933}
   enemyHPBar: {fileID: 830847749841029689}
+  bossCores:
+  - {fileID: 4772263784409764726}
+  - {fileID: 8786084036424629700}
+  - {fileID: 6383707627327933762}
   startingHealth: 100
   currentHealth: 0
   activeCore: 0
@@ -1379,6 +1389,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2956010782539405078, guid: 512903f3154bc924dbaf3f98de89371d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9769e8d140530e48a83c226e2604619, type: 2}
     - target: {fileID: -989067472107387002, guid: 512903f3154bc924dbaf3f98de89371d, type: 3}
       propertyPath: m_TagString
       value: Enemy
@@ -1399,6 +1413,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1854994819006451170, guid: 512903f3154bc924dbaf3f98de89371d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9769e8d140530e48a83c226e2604619, type: 2}
+    - target: {fileID: 4197426182539094769, guid: 512903f3154bc924dbaf3f98de89371d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9769e8d140530e48a83c226e2604619, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512903f3154bc924dbaf3f98de89371d, type: 3}
 --- !u!1 &5886153280506145933 stripped
@@ -1481,6 +1503,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -7475859885447031643, guid: 512903f3154bc924dbaf3f98de89371d, type: 3}
   m_PrefabInstance: {fileID: 8130497578689143877}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &2655239180211989399
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185619723236795331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07000002
+  m_Center: {x: 0.00000041350722, y: -0.000000007450587, z: -0.037500367}
 --- !u!114 &6383707627327933762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1495,19 +1530,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossHealth: {fileID: 3896031869257981811}
   coreNum: 2
---- !u!135 &2655239180211989399
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185619723236795331}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.07000002
-  m_Center: {x: 0.00000041350722, y: -0.000000007450587, z: -0.037500367}
 --- !u!82 &5386280971408136279
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2344,6 +2366,19 @@ MonoBehaviour:
   gunEnd: {fileID: 6869592889327193261}
   attackDamage: 5
   paused: 0
+--- !u!135 &6016801024509067780
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969432175900478794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.110048436
+  m_Center: {x: 9.473905e-15, y: 0.040000353, z: -0.0000000037252883}
 --- !u!114 &8786084036424629700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2358,19 +2393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossHealth: {fileID: 3896031869257981811}
   coreNum: 1
---- !u!135 &6016801024509067780
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6969432175900478794}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.110048436
-  m_Center: {x: 9.473905e-15, y: 0.040000353, z: -0.0000000037252883}
 --- !u!82 &3897970608310326322
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2580,6 +2602,19 @@ MonoBehaviour:
   gunEnd: {fileID: 6343524302332236354}
   attackDamage: 5
   paused: 0
+--- !u!135 &1072583002545182816
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8334312918113369518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07000002
+  m_Center: {x: -0.0000004212372, y: -0.000000007450587, z: -0.037500367}
 --- !u!114 &4772263784409764726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2594,19 +2629,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossHealth: {fileID: 3896031869257981811}
   coreNum: 0
---- !u!135 &1072583002545182816
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8334312918113369518}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.07000002
-  m_Center: {x: -0.0000004212372, y: -0.000000007450587, z: -0.037500367}
 --- !u!120 &3771649904704304494
 LineRenderer:
   m_ObjectHideFlags: 0
