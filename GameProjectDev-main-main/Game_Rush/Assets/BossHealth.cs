@@ -7,15 +7,25 @@ public class BossHealth : MonoBehaviour {
 
     public GameObject[] bossGuns;
     public Slider enemyHPBar;
+    public BossCore[] bossCores;
 
     public int startingHealth = 10;
     public int currentHealth;
     public int activeCore;
 
+    Renderer[] renderers = new Renderer[3];
+    int[] randomCores = new int[] { 0, 2 };
+    float colorLerp;
+
 
     // Start is called before the first frame update
     void Start() {
         currentHealth = startingHealth;
+
+
+        for (int i = 0; i < (bossCores.Length); i++) {
+            renderers[i] = bossCores[i].GetComponent<Renderer>();
+        }
     }
 
 
@@ -30,9 +40,16 @@ public class BossHealth : MonoBehaviour {
 
         for (int i = 0; i < 10; ++i) {
             if (Input.GetKeyDown("" + i)) {
-                activeCore = i;
+                ActivateGivenCore(i);
             }
         }
+
+        for (int i = 0; i < (bossCores.Length); i++) {
+            if (activeCore == i) {
+                renderers[i].material.color = Color.Lerp(Color.white, Color.red, colorLerp);
+            }
+        }
+        colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
     }
 
     public void TakeDamage(int amount) {
@@ -40,4 +57,22 @@ public class BossHealth : MonoBehaviour {
         enemyHPBar.value = (float)currentHealth / startingHealth;
     }
 
+    void ActivateCenterCore() {
+        activeCore = 1;
+    }
+    
+    void ActivateGivenCore(int c) {
+        activeCore = c;
+        for (int i = 0; i < (renderers.Length); i++) {
+            if (activeCore != i) {
+                renderers[i].material.color = Color.red;
+            }
+        }
+    }
+    void ChooseActiveCore() {
+        ActivateGivenCore(randomCores[Random.Range(0, randomCores.Length)]);
+    }
 }
+
+//colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
+//renderers.material.color = Color.Lerp(Color.white, Color.red, colorLerp);

@@ -6,11 +6,17 @@ public class BossCore : MonoBehaviour
 {
     public BossHealth bossHealth;
     public int coreNum;
+    PlayerShooting playerShooting;
 
     public void TryDamage(int damage) {
         if (bossHealth.activeCore == coreNum) {
             bossHealth.TakeDamage(damage);
+            playerShooting.DisplayDamageText(playerShooting.laserDPS);
         }
+    }
+
+    private void Awake() {
+        playerShooting = FindObjectOfType<PlayerShooting>();
     }
 
     // Start is called before the first frame update
