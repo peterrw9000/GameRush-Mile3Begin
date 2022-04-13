@@ -2368,6 +2368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3306198291071839854, guid: 353b2910c9895314bb7653d421dd2d12, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3306198291071839855, guid: 353b2910c9895314bb7653d421dd2d12, type: 3}
       propertyPath: m_Name
       value: InfantryEnemy
@@ -3564,6 +3568,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1341550559805388758, guid: e93e3812576943c489f78a911928021c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3067030598609799033, guid: e93e3812576943c489f78a911928021c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4466,6 +4474,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7835069489388507892, guid: d9d33589f2beff844b078cf45b931612, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b8b6f3eb71bf9b40b9bba07db473afc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d33589f2beff844b078cf45b931612, type: 3}
 --- !u!1 &1076250976 stripped
@@ -4919,6 +4931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3306198291071839854, guid: 001af294bd825f74390f6873a6e3146e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3306198291071839855, guid: 001af294bd825f74390f6873a6e3146e, type: 3}
       propertyPath: m_Name
       value: FlyEnemy
@@ -5266,6 +5282,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -6912,6 +6929,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
