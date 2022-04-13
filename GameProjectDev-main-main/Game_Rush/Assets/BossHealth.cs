@@ -65,10 +65,15 @@ public class BossHealth : MonoBehaviour {
         activeCore = c;
         for (int i = 0; i < (renderers.Length); i++) {
             if (activeCore != i) {
-                renderers[i].material.color = Color.red;
+                DeactiveCore(i);
             }
         }
     }
+
+    void DeactiveCore(int c) {
+        renderers[c].material.color = Color.red;
+    }
+
     void ChooseActiveCore() {
         ActivateGivenCore(randomCores[Random.Range(0, randomCores.Length)]);
     }
