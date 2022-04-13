@@ -16,18 +16,20 @@ public class BossHealth : MonoBehaviour {
     Renderer[] renderers = new Renderer[3];
     int[] randomCores = new int[] { 0, 2 };
     float colorLerp;
+    int damageToCore = 0;
 
 
     // Start is called before the first frame update
     void Start() {
         currentHealth = startingHealth;
-
-
         for (int i = 0; i < (bossCores.Length); i++) {
             renderers[i] = bossCores[i].GetComponent<Renderer>();
         }
     }
 
+    void AttackCycle(int c) {
+        ActivateGivenCore(c);
+    }
 
     // Update is called once per frame
     void Update() {
@@ -55,6 +57,7 @@ public class BossHealth : MonoBehaviour {
     public void TakeDamage(int amount) {
         currentHealth -= amount;
         enemyHPBar.value = (float)currentHealth / startingHealth;
+        damageToCore++;
     }
 
     void ActivateCenterCore() {
@@ -68,6 +71,7 @@ public class BossHealth : MonoBehaviour {
                 DeactiveCore(i);
             }
         }
+        damageToCore = 0;
     }
 
     void DeactiveCore(int c) {
