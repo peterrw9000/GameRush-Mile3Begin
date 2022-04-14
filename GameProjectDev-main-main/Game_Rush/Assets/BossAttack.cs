@@ -13,6 +13,7 @@ public class BossAttack : MonoBehaviour
     float timeAttack;
 
     public Transform gunEnd;
+    public Animator animator;
 
     public int attackDamage = 10;
     public bool paused;
@@ -41,7 +42,8 @@ public class BossAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timeAttack >= 0) { timeAttack -= Time.deltaTime;}
+        if (timeAttack >= 0) { timeAttack -= Time.deltaTime;/* animator.SetBool("Shooting", true);*/ }
+        //else animator.SetBool("Shooting", false);
         if (timeAttack <= 0) { StopShot();}
     }
 

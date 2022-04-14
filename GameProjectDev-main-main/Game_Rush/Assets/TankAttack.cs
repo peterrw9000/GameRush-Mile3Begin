@@ -19,6 +19,9 @@ public class TankAttack : MonoBehaviour
     [SerializeField]
     GameObject player;
 
+    [SerializeField]
+    public Animator animator;
+
     bool inRangeOfPlayer;
 
     //TankMovement tankMovement;
@@ -59,9 +62,14 @@ public class TankAttack : MonoBehaviour
         {
             Instantiate(rocket, transform.position, transform.rotation);
             timer = Time.time + fireRate;
-            //tankMovement.TankMove().enabled = false;
+           // animator.SetBool("Firing", true);
+            
+           
         }
-       
+        /*else
+        {
+            animator.SetBool("Firing", false);
+        }*/
         
     }
 

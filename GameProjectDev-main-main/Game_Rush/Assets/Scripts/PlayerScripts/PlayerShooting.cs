@@ -76,9 +76,9 @@ public class PlayerShooting : MonoBehaviour {
         laserFire.enabled = true;
         laserSound.PlayOneShot(audioManagement.soundEffects[0]);
         if (Physics.Raycast(ray, out hit)) {
-<<<<<<< Updated upstream
+
             ///Debug.Log(hit.collider.gameObject.name.ToString());
-=======
+
             if (hit.collider.tag == "WeakSpot")
             {
                 WeakSpot weakspot = hit.collider.GetComponent<WeakSpot>();
@@ -89,7 +89,7 @@ public class PlayerShooting : MonoBehaviour {
                     DisplayDamageText(weakspot.weakSpotDmg);
                 }
             }
->>>>>>> Stashed changes
+
             if (hit.collider.tag == "Enemy") {
                 if (hit.collider.TryGetComponent(out EnemyHealth eH)) {
                     EnemyHealth enemyHealth = eH;

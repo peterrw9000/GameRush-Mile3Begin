@@ -469,6 +469,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &6116017746153082890
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4498260174389689308}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8731406c12f2371428d338fe15179d1f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5239953881979726132
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2542701747978226544
 Transform:
   m_ObjectHideFlags: 0
@@ -615,6 +634,7 @@ MonoBehaviour:
   fireRate: 3.5
   rocket: {fileID: 3870089072576018167, guid: 8c5dd0d2031d9474ca6d366503c9561b, type: 3}
   player: {fileID: 0}
+  animator: {fileID: 6116017746153082890}
   paused: 0
 --- !u!1 &7520914555131191375
 GameObject:
@@ -886,6 +906,11 @@ PrefabInstance:
 --- !u!1 &2088509327027988774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4093584192508438479, guid: d24f30a203eb07b418be0702147b8536, type: 3}
+  m_PrefabInstance: {fileID: 2608909132384259817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4498260174389689308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7324626767300135627, guid: d24f30a203eb07b418be0702147b8536, type: 3}
   m_PrefabInstance: {fileID: 2608909132384259817}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2575509737742543106 stripped
