@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9280b6f225b8984597a819c09c25d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDPS: 2
+  laserDPS: 1
   range: 10000
   fireRate: 0.3
   overHeat: {fileID: 0}
@@ -4608,15 +4608,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1835995098626028786, guid: 9eb9acea007642343934744d7ab56726, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4799405813272286020, guid: 9eb9acea007642343934744d7ab56726, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4799405813272286020, guid: 9eb9acea007642343934744d7ab56726, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eb9acea007642343934744d7ab56726, type: 3}

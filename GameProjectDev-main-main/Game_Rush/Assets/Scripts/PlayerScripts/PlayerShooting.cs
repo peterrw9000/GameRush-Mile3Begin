@@ -76,6 +76,7 @@ public class PlayerShooting : MonoBehaviour {
         laserFire.enabled = true;
         laserSound.PlayOneShot(audioManagement.soundEffects[0]);
         if (Physics.Raycast(ray, out hit)) {
+            ///Debug.Log(hit.collider.gameObject.name.ToString());
             if (hit.collider.tag == "Enemy") {
                 if (hit.collider.TryGetComponent(out EnemyHealth eH)) {
                     EnemyHealth enemyHealth = eH;
@@ -88,8 +89,6 @@ public class PlayerShooting : MonoBehaviour {
                     BossCore bossCore = bC;
                     if (bossCore != null) {
                         bossCore.TryDamage(laserDPS);
-                        //DisplayDamageText(laserDPS);
-                        Debug.Log(hit.collider.gameObject.name.ToString());
                     }
                 }
                 else {

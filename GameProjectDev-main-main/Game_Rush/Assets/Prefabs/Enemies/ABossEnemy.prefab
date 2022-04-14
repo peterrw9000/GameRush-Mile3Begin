@@ -199,7 +199,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8002943334914396262, guid: 58361283e2f18d94bb64f2e8b206680a, type: 3}
+  - {fileID: 2100000, guid: a9769e8d140530e48a83c226e2604619, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1138,7 +1138,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8002943334914396262, guid: 58361283e2f18d94bb64f2e8b206680a, type: 3}
+  - {fileID: 2100000, guid: a9769e8d140530e48a83c226e2604619, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3166,7 +3166,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8002943334914396262, guid: 58361283e2f18d94bb64f2e8b206680a, type: 3}
+  - {fileID: 2100000, guid: a9769e8d140530e48a83c226e2604619, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3414,7 +3414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunEnd: {fileID: 2892537015907437675}
-  attackDamage: 10
+  attackDamage: 5
   paused: 0
 --- !u!120 &5706975620287631723
 LineRenderer:
