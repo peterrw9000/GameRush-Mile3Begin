@@ -8,6 +8,7 @@ public class BossHealth : MonoBehaviour {
     public GameObject[] bossGuns;
     public Slider enemyHPBar;
     public BossCore[] bossCores;
+    public GameObject explosion;
 
     public int startingHealth = 10;
     public int currentHealth;
@@ -99,6 +100,19 @@ public class BossHealth : MonoBehaviour {
         hitCount++;
         damageToCores[activeCore]++;
         Debug.Log(damageToCores[activeCore]);
+
+        if (currentHealth <= 0) {
+            Death();
+        }
+    }
+
+    public void Death() { 
+        Explode();
+        Destroy(gameObject, .2f);
+    }
+
+    void Explode() {
+        Instantiate(explosion, transform.position, transform.rotation);
     }
 
     void ActivateCenterCore() {

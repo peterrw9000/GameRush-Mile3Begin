@@ -957,9 +957,12 @@ MonoBehaviour:
   - {fileID: 3547577962181220620}
   - {fileID: 8773911919466264142}
   - {fileID: 8206607118772685491}
+  explosion: {fileID: 7786584070342475965, guid: cb6d2ce4b337cb74e869ba5dbb29b53b, type: 3}
   startingHealth: 100
   currentHealth: 0
   activeCore: 0
+  attackTimer: 0
+  timeTillAttack: 0
 --- !u!114 &852129866924612603
 MonoBehaviour:
   m_ObjectHideFlags: 0
