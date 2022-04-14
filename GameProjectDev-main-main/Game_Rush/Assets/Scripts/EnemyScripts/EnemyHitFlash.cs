@@ -28,6 +28,7 @@ public class EnemyHitFlash : MonoBehaviour
     }
     public void TurnMeshOn()
     {
+
         foreach (var o in enemyParts)
         {
             o.enabled = true;

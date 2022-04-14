@@ -9,6 +9,7 @@ TagManager:
   - FightZone
   - Cylinder
   - AudioManager
+  - WeakSpot
   layers:
   - Default
   - TransparentFX
