@@ -634,6 +634,33 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!135 &9086320527209804600
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676467137051765501}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.070000015
+  m_Center: {x: -0.00000003241003, y: -0.0000000063329955, z: -0.037500028}
+--- !u!114 &6449913305042913357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676467137051765501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d364a76e1efbb041b8c2f7669743ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weakSpotDmg: 15
+  enemyHealth: {fileID: 8769545558808291564}
 --- !u!1001 &5784801426708019968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -701,8 +728,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fly_002
       objectReference: {fileID: 0}
+    - target: {fileID: 4237874120025739773, guid: 3997aa364097bae48b6bfa072aca5eb3, type: 3}
+      propertyPath: m_TagString
+      value: WeakSpot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3997aa364097bae48b6bfa072aca5eb3, type: 3}
+--- !u!1 &7676467137051765501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4237874120025739773, guid: 3997aa364097bae48b6bfa072aca5eb3, type: 3}
+  m_PrefabInstance: {fileID: 5784801426708019968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6326721035494743275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3997aa364097bae48b6bfa072aca5eb3, type: 3}

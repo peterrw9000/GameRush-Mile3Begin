@@ -6,7 +6,7 @@ using UnityEngine;
 public class WeakSpot : MonoBehaviour
 {
     [SerializeField]
-    int weakSpotDmg = 15; 
+    public int weakSpotDmg = 15; 
 
     // this will be whatever health scripts the enemies are sharing for testing it was tankhealth
     public EnemyHealth enemyHealth;
@@ -28,7 +28,7 @@ public class WeakSpot : MonoBehaviour
         dmg = weakSpotDmg;
         //tankHealth = gameObject.GetComponentInParent<TankHealth>();
         enemyHealth.TakeDamage(dmg);
-        Destroy(gameObject);
+        //Destroy(gameObject);
      
     }
 

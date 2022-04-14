@@ -31,7 +31,7 @@ public class PlayerShooting : MonoBehaviour {
     public Transform laserOrigin;
     public Camera camera;
     public Text hitText;
-
+  
     AudioManager audioManagement;
     AudioSource laserSound;
 
@@ -76,7 +76,20 @@ public class PlayerShooting : MonoBehaviour {
         laserFire.enabled = true;
         laserSound.PlayOneShot(audioManagement.soundEffects[0]);
         if (Physics.Raycast(ray, out hit)) {
+
             ///Debug.Log(hit.collider.gameObject.name.ToString());
+
+            if (hit.collider.tag == "WeakSpot")
+            {
+                WeakSpot weakspot = hit.collider.GetComponent<WeakSpot>();
+                if (weakspot != null)
+                {
+                    weakspot.DamageToEnemy(laserDPS);
+                    //DisplayCriticalText(weakspot.weakSpotDmg);
+                    DisplayDamageText(weakspot.weakSpotDmg);
+                }
+            }
+
             if (hit.collider.tag == "Enemy") {
                 if (hit.collider.TryGetComponent(out EnemyHealth eH)) {
                     EnemyHealth enemyHealth = eH;
@@ -94,6 +107,9 @@ public class PlayerShooting : MonoBehaviour {
                 else {
                     Debug.Log(hit.collider.gameObject.name.ToString());
                 }
+               
+                
+                
             }
             laserFire.SetPosition(1, hit.point);
         }
@@ -101,10 +117,22 @@ public class PlayerShooting : MonoBehaviour {
     }
 
     public void DisplayDamageText(int damage) {
-        Vector3 mousePosition = Input.mousePosition;
-        hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
-        hitText.text = damage.ToString() + " Damage!";
+        if(hit.collider.tag == "Enemy")
+        { 
+
+            Vector3 mousePosition = Input.mousePosition;
+            hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
+            hitText.text = damage.ToString() + " Damage!";
+        }
+        else if(hit.collider.tag == "WeakSpot")
+        {
+            hitText.text = damage.ToString() + " Critical Hit!";
+            
+        }
+       
+        
     }
+
 }
 /*                    Ray shootRay = new Ray();
     RaycastHit shootHit;
