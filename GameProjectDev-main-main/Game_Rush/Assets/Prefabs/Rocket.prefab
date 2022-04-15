@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3157950951670830583}
   m_Layer: 0
   m_Name: Rocket
-  m_TagString: Untagged
+  m_TagString: EnemyRocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +78,7 @@ MonoBehaviour:
   rocketDam: 10
   rocketSpeed: 7.5
   rotateSpeed: 200
+  rocketHP: 2
 --- !u!1001 &4082103372681830690
 PrefabInstance:
   m_ObjectHideFlags: 0

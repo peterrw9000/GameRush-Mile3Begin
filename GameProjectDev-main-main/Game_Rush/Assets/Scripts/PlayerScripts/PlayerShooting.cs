@@ -89,7 +89,17 @@ public class PlayerShooting : MonoBehaviour {
                     DisplayDamageText(weakspot.weakSpotDmg);
                 }
             }
+            if (hit.collider.tag == "EnemyRocket")
+            {
+                HomingRocket homingRocket = hit.collider.GetComponent<HomingRocket>();
+                if(homingRocket != null)
+                {
 
+                    homingRocket.RocketDamage(laserDPS);
+                    
+                }
+           
+            }
             if (hit.collider.tag == "Enemy") {
                 if (hit.collider.TryGetComponent(out EnemyHealth eH)) {
                     EnemyHealth enemyHealth = eH;

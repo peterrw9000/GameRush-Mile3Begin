@@ -1322,12 +1322,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9280b6f225b8984597a819c09c25d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDPS: 1
+  laserDPS: 2
   range: 10000
   fireRate: 0.3
   overHeat: {fileID: 0}
   overHeat2: {fileID: 0}
-  effectdisplay: 0.1
+  effectdisplay: 0.3
   laserOrigin: {fileID: 579528648}
   camera: {fileID: 1477734192}
   hitText: {fileID: 1970237285}
@@ -2670,7 +2670,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579528647}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c4c88aabbf021446ba8ece13dad6fbf, type: 3}
   m_Name: 
@@ -5375,7 +5375,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -7027,7 +7026,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
