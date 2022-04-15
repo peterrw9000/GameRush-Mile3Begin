@@ -117,8 +117,7 @@ public class PlayerShooting : MonoBehaviour {
     }
 
     public void DisplayDamageText(int damage) {
-        if(hit.collider.tag == "Enemy")
-        { 
+        if(hit.collider.tag == "Enemy")        { 
 
             Vector3 mousePosition = Input.mousePosition;
             hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
@@ -126,8 +125,9 @@ public class PlayerShooting : MonoBehaviour {
         }
         else if(hit.collider.tag == "WeakSpot")
         {
-            hitText.text = damage.ToString() + " Critical Hit!";
-            
+            Vector3 mousePosition = Input.mousePosition;
+            hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
+            hitText.text = damage.ToString() + " Critical Hit!";            
         }
        
         
