@@ -36,4 +36,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus Scene/Victory.unity
     guid: 7e38e2efeecf8144c98daf63b53fabaf
+  - enabled: 1
+    path: Assets/Scenes/BossMicrogame.unity
+    guid: a0a361ddbc1687245bd9a6c94c14473c
   m_configObjects: {}

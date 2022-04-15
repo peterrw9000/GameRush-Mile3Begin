@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBossMicrogameControls : MonoBehaviour
 {
@@ -37,6 +38,22 @@ public class PlayerBossMicrogameControls : MonoBehaviour
                 enemyHeal.health--;
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
             }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Lazer" || other.tag == "Shield")
+        {
+            SceneManager.LoadScene(8);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "DeathWall")
+        {
+            SceneManager.LoadScene(8);
         }
     }
 }
