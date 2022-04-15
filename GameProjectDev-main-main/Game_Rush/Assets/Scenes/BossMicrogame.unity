@@ -165,7 +165,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 30, z: 1}
+  m_Size: {x: 1, y: 30, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &391129295
 GameObject:
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 391129296}
   m_Layer: 0
   m_Name: Shield2
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,7 +195,7 @@ BoxCollider:
   m_GameObject: {fileID: 391129295}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -257,7 +257,7 @@ Transform:
   m_GameObject: {fileID: 391129295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8, y: 64, z: 0}
-  m_LocalScale: {x: 9, y: 9, z: 5}
+  m_LocalScale: {x: 8, y: 8, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -274,8 +274,8 @@ GameObject:
   - component: {fileID: 621375637}
   - component: {fileID: 621375636}
   - component: {fileID: 621375635}
-  - component: {fileID: 621375634}
   - component: {fileID: 621375639}
+  - component: {fileID: 621375634}
   m_Layer: 6
   m_Name: Boss
   m_TagString: Enemy
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 621375633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c1f4e543463c4b46800366310569af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 557c6b59ff85f5649a398fec8e93fd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987a44b42554ee142a1dba33c1399e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20000
+  speed: 15000
   wallSpeed: 0.1
   xdirection: 0.1
   alphaTime: 0.1
@@ -441,7 +441,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 30, z: 1}
+  m_Size: {x: 1, y: 30, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1083352639
 GameObject:
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 1280260696}
   m_Layer: 0
   m_Name: Shield1
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -695,7 +695,7 @@ BoxCollider:
   m_GameObject: {fileID: 1280260695}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -757,7 +757,7 @@ Transform:
   m_GameObject: {fileID: 1280260695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8, y: 64, z: 0}
-  m_LocalScale: {x: 9, y: 9, z: 5}
+  m_LocalScale: {x: 8, y: 8, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 1346509415}
   m_Layer: 0
   m_Name: DeathWall2
-  m_TagString: Untagged
+  m_TagString: DeathWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 1895875820}
   m_Layer: 0
   m_Name: DeathWall1
-  m_TagString: Untagged
+  m_TagString: DeathWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
