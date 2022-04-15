@@ -37,6 +37,10 @@ public class TankAttack : MonoBehaviour
         paused = false;
     }
 
+    private void Awake() {
+        timer = Time.time + fireRate;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,17 +55,16 @@ public class TankAttack : MonoBehaviour
         {
             TankFire();
         }
-
-        
-   
     }
 
     void TankFire()
     {
         if(Time.time > timer )
         {
-            Instantiate(rocket, transform.position, transform.rotation);
-            timer = Time.time + fireRate;
+            if (!paused) {
+                Instantiate(rocket, transform.position, transform.rotation);
+                timer = Time.time + fireRate;
+            }
            // animator.SetBool("Firing", true);
             
            
