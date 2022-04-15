@@ -17,10 +17,12 @@ public class HomingRocket : MonoBehaviour
 
     public int rocketHP = 2;
 
-   // [SerializeField]
-   // float rocketLife = 1f;
+    public GameObject explosion;
 
-    
+    // [SerializeField]
+    // float rocketLife = 1f;
+
+
     Transform targetPlayer;
 
     PlayerHealth playerHealth;
@@ -94,8 +96,13 @@ public class HomingRocket : MonoBehaviour
 
         if(rocketHP <=0)
         {
-            Destroy(gameObject);
+            Explode();
+            Destroy(gameObject, .1f);
         }
+    }
+
+    void Explode() {
+        Instantiate(explosion, transform.position, transform.rotation);
     }
 
     public void OnTriggerEnter(Collider col)
@@ -106,7 +113,8 @@ public class HomingRocket : MonoBehaviour
             playerHealth = col.gameObject.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(rocketDam);
             //add rocketlife after gameobject only if you want to.
-            Destroy(gameObject);
+            Explode();
+            Destroy(gameObject, .1f);           
         }
         
     }

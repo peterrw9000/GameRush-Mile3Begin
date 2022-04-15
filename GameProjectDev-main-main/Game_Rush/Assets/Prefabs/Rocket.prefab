@@ -77,8 +77,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rocketDam: 10
   rocketSpeed: 7.5
-  rotateSpeed: 200
   rocketHP: 2
+  explosion: {fileID: 8725940683926336782, guid: 01d83e3c2307614459a06bcdc1de9661, type: 3}
+  paused: 0
 --- !u!1001 &4082103372681830690
 PrefabInstance:
   m_ObjectHideFlags: 0
