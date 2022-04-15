@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunEnd: {fileID: 0}
+  animator: {fileID: 0}
   attackDamage: 10
   paused: 0
 --- !u!114 &1341550559805388752
@@ -423,9 +424,12 @@ MonoBehaviour:
   - {fileID: 4772263784409764726}
   - {fileID: 8786084036424629700}
   - {fileID: 6383707627327933762}
+  explosion: {fileID: 7786584070342475965, guid: cb6d2ce4b337cb74e869ba5dbb29b53b, type: 3}
   startingHealth: 100
   currentHealth: 0
   activeCore: 0
+  attackTimer: 0
+  timeTillAttack: 0
 --- !u!1 &1358516531610628122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,6 +1746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunEnd: {fileID: 1042538214944396787}
+  animator: {fileID: 0}
   attackDamage: 5
   paused: 0
 --- !u!82 &569776517254592812
@@ -1951,6 +1956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunEnd: {fileID: 2120439500203243442}
+  animator: {fileID: 0}
   attackDamage: 5
   paused: 0
 --- !u!82 &3145461387628083776
@@ -2160,6 +2166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunEnd: {fileID: 5513903060058291627}
+  animator: {fileID: 0}
   attackDamage: 5
   paused: 0
 --- !u!82 &1307047171081465546
@@ -2369,6 +2376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunEnd: {fileID: 6869592889327193261}
+  animator: {fileID: 0}
   attackDamage: 5
   paused: 0
 --- !u!135 &6016801024509067780
@@ -2605,6 +2613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunEnd: {fileID: 6343524302332236354}
+  animator: {fileID: 0}
   attackDamage: 5
   paused: 0
 --- !u!135 &1072583002545182816
@@ -2841,6 +2850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunEnd: {fileID: 6169908802271428000}
+  animator: {fileID: 0}
   attackDamage: 5
   paused: 0
 --- !u!95 &3473150966301332310

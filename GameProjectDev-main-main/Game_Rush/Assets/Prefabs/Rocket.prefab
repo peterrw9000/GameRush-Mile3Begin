@@ -75,8 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d93a907cfa90440a83fbb8ce3ce2ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketDam: 50
-  rocketSpeed: 5.5
+  rocketDam: 10
+  rocketSpeed: 7.5
   rotateSpeed: 200
 --- !u!1001 &4082103372681830690
 PrefabInstance:
