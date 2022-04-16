@@ -15,6 +15,8 @@ public class EnemyMovement : MonoBehaviour
     Transform player;
 
     public bool paused;
+    bool attackPlayer;
+    bool bossHover;
 
     void OnPauseGame() {
         paused = true;
@@ -50,7 +52,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    bool attackPlayer;
+    
 
     void Move() {
         transform.position = Vector3.Lerp(transform.position, currentTarget.position,
@@ -60,8 +62,14 @@ public class EnemyMovement : MonoBehaviour
         if (Vector3.Distance(transform.position, currentTarget.position) < dist) {
             targetIndex++;
             if (targetIndex >= targets.Count) {
-                //targetIndex = 0;
-                attackPlayer = true;
+                if (TryGetComponent(out EnemyAttackRanged eAR) || TryGetComponent(out KnightAttack ka)) {
+                    targetIndex = 0;
+                } else if (TryGetComponent(out BossHealth bH)) {
+                    bossHover = true;
+                    //Debug.Log("Fighting Boss");
+                } else {
+                    attackPlayer = true;
+                }
             }
             updateTarget();
         }
@@ -70,8 +78,11 @@ public class EnemyMovement : MonoBehaviour
     void updateTarget() {
         if (
             //moveTimer <= timeTillAttack
-            !attackPlayer ) {
+            !attackPlayer && !bossHover) {
             currentTarget = targets[targetIndex];
+        }
+        else if (bossHover) {
+            currentTarget = targets[1];
         }
         else {
             currentTarget = player;

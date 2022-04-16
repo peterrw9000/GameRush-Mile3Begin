@@ -31,9 +31,9 @@ public class PlayerMover : MonoBehaviour
         if (enemiesDestroyed == maxScore) {
             StartTimer();
         }
-        if (Input.GetKeyDown("m")) {
+/*        if (Input.GetKeyDown("m")) {
             MovePlayer();
-        }
+        }*/
         if (timerStarted == true) {
             timer -= Time.deltaTime;
         }
@@ -69,7 +69,7 @@ public class PlayerMover : MonoBehaviour
         if (anim.speed == 0.0f) {
             anim.speed = 1f;
         }
-        Debug.Log("Moving Player!");
+        //Debug.Log("Moving Player!");
         playerMoved = true;
         //Debug.Break();
     }

@@ -44,7 +44,10 @@ public class PlayerHealth : MonoBehaviour
     {
         damageTaken =  (currentHealth - startingHealth) * - 1;
         if (!paused) {
-            DisplayGameText(); 
+            DisplayGameText();
+        }
+        else {
+            DisplayMicroGameText();
         }
 
         if (timerStarted == true) {
@@ -58,6 +61,11 @@ public class PlayerHealth : MonoBehaviour
     void DisplayGameText() {
         if (GetComponentInChildren<Text>().gameObject.activeInHierarchy) {
             damageTakenText.text = damageTaken.ToString() + " Damage Taken";
+        }
+    }
+    void DisplayMicroGameText() {
+        if (GetComponentInChildren<Text>().gameObject.activeInHierarchy) {
+            damageTakenText.text = "Press SPACE to drop PWRBLK ";
         }
     }
 

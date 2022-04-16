@@ -101,7 +101,7 @@ public class EnemySpawner : MonoBehaviour {
             4, 4, 5, 15,
             4, 3, 4, 13,   
             4, 5, 6, 15,
-            5, 4, 5, 18,
+            5, 4, 19, 20,
                        };
     public readonly int[] waveSizeArray = { 6, 7, 9, 8, 8, 6, 8, 6, 11, 10 };
     int spawnKey = 0;
@@ -110,12 +110,12 @@ public class EnemySpawner : MonoBehaviour {
     protected bool paused;
     void OnPauseGame() {
         paused = true;
-        Debug.Log("Pause!");
+        //Debug.Log("Pause!");
     }
 
     void OnResumeGame() {
         paused = false;
-        Debug.Log("Unpause!");
+        //Debug.Log("Unpause!");
     }
 
     void SpawnEnemy(int type, int spawnPosition, int positionOne, int positionTwo) {

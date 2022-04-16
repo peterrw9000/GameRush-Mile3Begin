@@ -33,9 +33,9 @@ public class MicroGameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("g")) {
+/*        if (Input.GetKeyDown("g")) {
             SetActiveGame(0);
-        }
+        }*/
     }
 
     public void SetActiveGame(int game) {
@@ -64,7 +64,7 @@ public class MicroGameManager : MonoBehaviour
         foreach (GameObject go in objects) {
             go.SendMessage("OnPauseGame", SendMessageOptions.DontRequireReceiver);
         }
-        healthText.gameObject.SetActive(false);
+        //healthText.gameObject.SetActive(false);
         damageText.gameObject.SetActive(false);
         //enemySpawner.OnPauseGame();
         microgameSounds.PlayOneShot(audioManagement.soundEffects[2]);
