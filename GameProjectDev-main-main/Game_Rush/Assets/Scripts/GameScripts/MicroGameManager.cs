@@ -33,9 +33,9 @@ public class MicroGameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("g")) {
+/*        if (Input.GetKeyDown("g")) {
             SetActiveGame(0);
-        }
+        }*/
     }
 
     public void SetActiveGame(int game) {

@@ -110,12 +110,12 @@ public class EnemySpawner : MonoBehaviour {
     protected bool paused;
     void OnPauseGame() {
         paused = true;
-        Debug.Log("Pause!");
+        //Debug.Log("Pause!");
     }
 
     void OnResumeGame() {
         paused = false;
-        Debug.Log("Unpause!");
+        //Debug.Log("Unpause!");
     }
 
     void SpawnEnemy(int type, int spawnPosition, int positionOne, int positionTwo) {

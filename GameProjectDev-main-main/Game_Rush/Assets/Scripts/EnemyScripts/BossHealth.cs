@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class BossHealth : MonoBehaviour {
     public Slider enemyHPBar;
     public BossCore[] bossCores;
     public GameObject explosion;
+    public GameObject victory;
 
     public int startingHealth = 10;
     public int currentHealth;
@@ -102,6 +104,7 @@ public class BossHealth : MonoBehaviour {
         Debug.Log(damageToCores[activeCore]);
 
         if (currentHealth <= 0) {
+            Instantiate(victory);
             Death();
         }
     }
@@ -110,6 +113,8 @@ public class BossHealth : MonoBehaviour {
         Explode();
         Destroy(gameObject, .2f);
     }
+
+
 
     void Explode() {
         Instantiate(explosion, transform.position, transform.rotation);

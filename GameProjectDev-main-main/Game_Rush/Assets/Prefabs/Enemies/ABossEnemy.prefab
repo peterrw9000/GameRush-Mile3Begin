@@ -896,7 +896,7 @@ Transform:
   m_GameObject: {fileID: 1835995098626028786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.689464, y: 0.00024795532, z: 4.5968933}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 2217941984267738614}
   - {fileID: 5491923109317633363}
@@ -959,6 +959,7 @@ MonoBehaviour:
   - {fileID: 8773911919466264142}
   - {fileID: 8206607118772685491}
   explosion: {fileID: 8725940683926336782, guid: 01d83e3c2307614459a06bcdc1de9661, type: 3}
+  victory: {fileID: 5943065484936555841, guid: 9a41f5ea4087af340a58124d8ed3d2d2, type: 3}
   startingHealth: 100
   currentHealth: 0
   activeCore: 0
