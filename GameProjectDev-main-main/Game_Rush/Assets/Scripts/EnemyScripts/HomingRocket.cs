@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(SphereCollider))]
 //[RequireComponent(typeof(Rigidbody))]
@@ -19,9 +20,11 @@ public class HomingRocket : MonoBehaviour
 
     public GameObject explosion;
 
+    public Slider enemyHPBar;
+
     // [SerializeField]
     // float rocketLife = 1f;
-
+    public int startingHealth = 2;
 
     Transform targetPlayer;
 
@@ -40,13 +43,10 @@ public class HomingRocket : MonoBehaviour
         paused = false;
     }
 
-
-
     // Start is called before the first frame update
     void Start()
     {
             rb = GetComponent<Rigidbody>();
-
             targetPlayer = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -99,6 +99,7 @@ public class HomingRocket : MonoBehaviour
             Explode();
             Destroy(gameObject, .1f);
         }
+        enemyHPBar.value = (float)rocketHP / startingHealth;
     }
 
     void Explode() {

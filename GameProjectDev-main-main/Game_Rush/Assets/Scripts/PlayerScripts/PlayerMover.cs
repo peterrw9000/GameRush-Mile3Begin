@@ -69,7 +69,7 @@ public class PlayerMover : MonoBehaviour
         if (anim.speed == 0.0f) {
             anim.speed = 1f;
         }
-        Debug.Log("Moving Player!");
+        //Debug.Log("Moving Player!");
         playerMoved = true;
         //Debug.Break();
     }

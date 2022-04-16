@@ -64,7 +64,7 @@ public class MicroGameManager : MonoBehaviour
         foreach (GameObject go in objects) {
             go.SendMessage("OnPauseGame", SendMessageOptions.DontRequireReceiver);
         }
-        healthText.gameObject.SetActive(false);
+        //healthText.gameObject.SetActive(false);
         damageText.gameObject.SetActive(false);
         //enemySpawner.OnPauseGame();
         microgameSounds.PlayOneShot(audioManagement.soundEffects[2]);
