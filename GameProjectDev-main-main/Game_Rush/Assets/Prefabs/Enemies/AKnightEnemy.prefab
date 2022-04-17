@@ -58,14 +58,14 @@ PrefabInstance:
     - target: {fileID: 1341550559805388759, guid: c0e2ad396cd2e4747abff57fde0d3b27, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4812ddaa8bf17904cac1466ea3dd54bc, type: 2}
+      objectReference: {fileID: 2100000, guid: e37015cd6d4fcf5428c11f2fc67077e0, type: 2}
     - target: {fileID: 1341550559805388759, guid: c0e2ad396cd2e4747abff57fde0d3b27, type: 3}
       propertyPath: m_Parameters.colorGradient.ctime1
       value: 17348
       objectReference: {fileID: 0}
     - target: {fileID: 1341550559805388759, guid: c0e2ad396cd2e4747abff57fde0d3b27, type: 3}
       propertyPath: m_Parameters.colorGradient.ctime2
-      value: 48959
+      value: 48573
       objectReference: {fileID: 0}
     - target: {fileID: 1341550559805388759, guid: c0e2ad396cd2e4747abff57fde0d3b27, type: 3}
       propertyPath: m_Parameters.colorGradient.ctime3

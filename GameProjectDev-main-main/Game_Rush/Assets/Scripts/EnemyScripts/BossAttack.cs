@@ -54,7 +54,7 @@ public class BossAttack : MonoBehaviour
             shootLine.SetPosition(0, gunEnd.position);
             shootLine.SetPosition(1, player.transform.position);
             playerHealth.TakeDamage(attackDamage);
-            timeAttack = 1f;
+            timeAttack = .5f;
             //shootingTimer = 0;
             //Debug.Break();
         }
