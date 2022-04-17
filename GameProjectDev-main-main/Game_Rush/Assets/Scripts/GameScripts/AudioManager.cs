@@ -5,7 +5,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioClip[] soundEffects;
-    public AudioClip[] music;
+    public AudioClip[] musics;
+    public AudioSource BGM;
 
     AudioSource underscoreAudio;
     // Start is called before the first frame update
@@ -19,4 +20,12 @@ public class AudioManager : MonoBehaviour
     {
         
     }
+
+    public void ChangeBGM(AudioClip music) {
+        BGM.Stop();
+        BGM.clip = music;
+        BGM.Play();
+    }
+
+
 }

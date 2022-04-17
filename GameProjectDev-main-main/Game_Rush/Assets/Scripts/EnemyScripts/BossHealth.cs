@@ -11,12 +11,14 @@ public class BossHealth : MonoBehaviour {
     public BossCore[] bossCores;
     public GameObject explosion;
     public GameObject victory;
+    public AudioManager audioManager;
+    public AudioClip bossMusic;
 
     public int startingHealth = 10;
     public int currentHealth;
     public int activeCore;
     public float attackTimer;
-    public float timeTillAttack;
+    public float timeTillAttack;    
 
     SkinnedMeshRenderer[] skinnedMeshRenderers = new SkinnedMeshRenderer[3];
     Renderer[] renderers = new Renderer[3];
@@ -26,6 +28,11 @@ public class BossHealth : MonoBehaviour {
     int[] damageToCores = new int[] { 0, 0, 0 };
     int hitCount = 0;
 
+    private void Awake() {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+    }
+
+
     void Start() {
         currentHealth = startingHealth;
         for (int i = 0; i < (bossCores.Length); i++) {
@@ -34,6 +41,7 @@ public class BossHealth : MonoBehaviour {
         ChooseActiveCore();
         attackTimer = 0;
         timeTillAttack = 10;
+        audioManager.ChangeBGM(bossMusic);
     }
 
     void Update() {

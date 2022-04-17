@@ -960,6 +960,8 @@ MonoBehaviour:
   - {fileID: 8206607118772685491}
   explosion: {fileID: 8725940683926336782, guid: 01d83e3c2307614459a06bcdc1de9661, type: 3}
   victory: {fileID: 5943065484936555841, guid: 9a41f5ea4087af340a58124d8ed3d2d2, type: 3}
+  audioManager: {fileID: 0}
+  bossMusic: {fileID: 8300000, guid: fefa52bf64797c94dbcd65248a0ed83d, type: 3}
   startingHealth: 100
   currentHealth: 0
   activeCore: 0
