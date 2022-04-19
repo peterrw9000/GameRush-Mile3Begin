@@ -34,9 +34,9 @@ public class PlayerBossMicrogameControls : MonoBehaviour
         {
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, range, thisEnemy))
             {
-                HealthTest enemyHeal = hit.collider.GetComponent<HealthTest>();
+                BossMicrogameHealth enemyHeal = hit.collider.GetComponent<BossMicrogameHealth>();
                 enemyHeal.health--;
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.black);
             }
         }
     }
@@ -45,7 +45,14 @@ public class PlayerBossMicrogameControls : MonoBehaviour
     {
         if (other.tag == "Lazer" || other.tag == "Shield")
         {
-            SceneManager.LoadScene(8);
+            if (GameManager.instance.playerLives <= 0)
+            {
+                SceneManager.LoadScene(8);
+            }
+            else
+            {
+                GameManager.instance.playerLives--;
+            }
         }
     }
 

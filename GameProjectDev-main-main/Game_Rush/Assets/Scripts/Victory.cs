@@ -20,6 +20,6 @@ public class Victory : MonoBehaviour
 
     IEnumerator CountDown() {
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(10);
     }
 }
