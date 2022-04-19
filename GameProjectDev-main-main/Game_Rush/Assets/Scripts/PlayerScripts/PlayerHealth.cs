@@ -85,9 +85,9 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void Death() {
-        playerLives--;
+        GameManager.instance.playerLives--;
         //isDead = true;
-        if (playerLives > 0) {
+        if (GameManager.instance.playerLives > 0) {
             microGames.SetActiveGame(0);
         }
         else

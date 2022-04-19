@@ -16,7 +16,7 @@ public class QTEGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inputsRequired = 5;
+        GameManager.instance.inputsRequired = 5;
         randomInput = Random.Range(1, 5);
         SetInput();
     }
@@ -25,14 +25,14 @@ public class QTEGame : MonoBehaviour
     void Update()
     {
         timerInfo.text = timer.ToString("F0") + " Parsecs";
-        inputCount.text = inputsConfirmed + "/" + inputsRequired;
+        inputCount.text = inputsConfirmed + "/" + GameManager.instance.inputsRequired;
         if (inputsFinished != true)
         {
             timer -= Time.deltaTime * 100;
             if (Input.GetButtonDown("QTEInput" + randomInput))
             {
                 inputsConfirmed += 1;
-                if (inputsConfirmed == inputsRequired)
+                if (inputsConfirmed == GameManager.instance.inputsRequired)
                 {
                     inputsFinished = true;
                     inputNeeded.text = "DONE";
