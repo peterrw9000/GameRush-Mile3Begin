@@ -19,18 +19,15 @@ public class BossMicrogameAttack : MonoBehaviour
 
     public float speed;
     public float wallSpeed;
-
     public float xdirection;
-    public float alphaTime;
 
     public Transform deathWall1;
     public Transform deathWall2;
 
     public Collider shield1;
     public Collider shield2;
-    public Material shieldAlpha;
-
-    public Transform shieldtest;
+    public Renderer shieldEnergy1;
+    public Renderer shieldEnergy2;
 
     public Transform camPosition;
 
@@ -109,37 +106,39 @@ public class BossMicrogameAttack : MonoBehaviour
                 shieldAttackTimer += Time.deltaTime;
                 if (shieldAttackTimer >= 2)
                 {
+                    shieldEnergy1.material.SetFloat("_fadetiming", 3);
+                    shieldEnergy2.material.SetFloat("_fadetiming", 3);
                     shieldAttackFinished = false;
                     shieldAttackStarting = true;
-                    Color shieldColor = shieldAlpha.color;
-                    while (shieldAlpha.color.a < 1 && shieldAttackStarting == true)
+                    Color alphaColor = shieldEnergy1.material.color;
+                    while (shieldAttackStarting == true)
                     {
-                        shieldColor.a += alphaTime * Time.deltaTime;
-                        shieldAlpha.color = shieldColor;
-                        if (shieldAlpha.color.a == 1)
+                        if (alphaColor.a == 1)
                         {
                             shieldAttackStarting = false;
                             shieldAttackEnding = true;
                         }
                     }
-                    while (shieldAlpha.color.a > 0 && shieldAttackEnding == true)
+                    while (shieldAttackEnding == true)
                     {
-                        shieldColor.a -= alphaTime * Time.deltaTime;
-                        shieldAlpha.color = shieldColor;
-                        if (shieldAlpha.color.a == 0)
+                        if (alphaColor.a == 0)
                         {
                             shieldAttackTimer = 0;
+                            shieldEnergy1.material.SetFloat("_fadetiming", 0);
+                            shieldEnergy2.material.SetFloat("_fadetiming", 0);
                             wallAttackFinished = false;
                             shieldAttackFinished = true;
                         }
                     }
-                    if (shieldAlpha.color.a > 0)
+                    if (shieldEnergy1.material.GetFloat("_fadetiming") >= 1)
                     {
                         shield1.enabled = true;
+                        shield2.enabled = true;
                     }
                     else
                     {
                         shield1.enabled = false;
+                        shield2.enabled = false;
                     }    
                 }
             }

@@ -264,7 +264,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dcb01cefd8b8b9a45aa1da367d80e747, type: 2}
+  - {fileID: 2100000, guid: 0958583a4629b0b44932408ff0234800, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -434,13 +434,12 @@ MonoBehaviour:
   speed: 15000
   wallSpeed: 0.1
   xdirection: 0.1
-  alphaTime: 0.1
   deathWall1: {fileID: 1895875823}
   deathWall2: {fileID: 1346509418}
   shield1: {fileID: 1280260696}
   shield2: {fileID: 391129296}
-  shieldAlpha: {fileID: 2100000, guid: dcb01cefd8b8b9a45aa1da367d80e747, type: 2}
-  shieldtest: {fileID: 0}
+  shieldEnergy1: {fileID: 1280260697}
+  shieldEnergy2: {fileID: 391129297}
   camPosition: {fileID: 1730242171}
   warning: {fileID: 1818325522}
   LazerSpawn: {fileID: 1490260661}
@@ -633,7 +632,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dcb01cefd8b8b9a45aa1da367d80e747, type: 2}
+  - {fileID: 2100000, guid: 0958583a4629b0b44932408ff0234800, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1054,7 +1053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730242166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1025486226}
