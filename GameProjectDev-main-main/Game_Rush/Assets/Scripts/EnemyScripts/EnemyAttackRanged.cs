@@ -15,7 +15,7 @@ public class EnemyAttackRanged : MonoBehaviour
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
     Transform weakPoint;
-    float shootingDelay = .75f;
+    public float shootingDelay = 1f;
     float shootingTimer = 0f;
     AudioManager audioManagement;
     AudioSource enemyLaserSound;

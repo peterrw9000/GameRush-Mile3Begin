@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
-  speed: 3
+  speed: 4
   moveTimer: 0
   timeTillAttack: 10
   paused: 0

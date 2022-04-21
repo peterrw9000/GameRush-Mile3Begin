@@ -41,7 +41,8 @@ public class BossHealth : MonoBehaviour {
         ChooseActiveCore();
         attackTimer = 0;
         timeTillAttack = 10;
-        audioManager.ChangeBGM(bossMusic);
+        StartCoroutine (audioManager.ChangeBGM2(bossMusic));
+        //audioManager.ChangeBGM(bossMusic);
     }
 
     void Update() {

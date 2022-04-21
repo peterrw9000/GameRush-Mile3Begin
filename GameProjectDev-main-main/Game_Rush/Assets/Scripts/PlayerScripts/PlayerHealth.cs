@@ -14,7 +14,6 @@ public class PlayerHealth : MonoBehaviour
     public int playerLives = 5;
     public Text damageTakenText;
 
-    ///public Image playerHPBar; 
     public Slider playerHPBar; 
 
     public float timer;
@@ -75,7 +74,6 @@ public class PlayerHealth : MonoBehaviour
             if (currentHealth <= 0 && isDead == false) {
                 Death();
             }
-            ///playerHPBar.fillAmount = (float)currentHealth / startingHealth;
             CalcHealthSlider();
         }
     }

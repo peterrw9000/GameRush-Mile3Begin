@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -46281,6 +46281,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -54726,7 +54727,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6782356f46109c14a8bc1444c52db5fa, type: 3}
   - {fileID: 8300000, guid: 29de5a5feeb4c3a4eb7a0a67ca82a831, type: 3}
   musics: []
-  BGM: {fileID: 0}
+  BGM: {fileID: 1269468611}
 --- !u!4 &1743335943
 Transform:
   m_ObjectHideFlags: 0
@@ -59652,6 +59653,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
