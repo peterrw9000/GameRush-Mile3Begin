@@ -432,10 +432,10 @@ SphereCollider:
   m_GameObject: {fileID: 3306198291071839855}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.0604892
-  m_Center: {x: 0.41257307, y: 0.58344805, z: 0.13620687}
+  m_Radius: 1.206287
+  m_Center: {x: 0.26677525, y: 0.58344805, z: 0.13620687}
 --- !u!82 &8696977966810158956
 AudioSource:
   m_ObjectHideFlags: 0

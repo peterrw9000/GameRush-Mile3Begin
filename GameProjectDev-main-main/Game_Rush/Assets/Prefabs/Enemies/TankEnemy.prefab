@@ -46,6 +46,7 @@ MonoBehaviour:
   fireRate: 3.5
   rocket: {fileID: 3870089072576018167, guid: 8c5dd0d2031d9474ca6d366503c9561b, type: 3}
   player: {fileID: 0}
+  animator: {fileID: 0}
   paused: 0
 --- !u!1 &423134553326573394
 GameObject:
@@ -288,7 +289,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341550559805388754}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15f3f03144f4f514f885638fbea36284, type: 3}
   m_Name: 
@@ -336,6 +337,7 @@ MonoBehaviour:
   timeTillAttack: 5
   timeAttack: 0
   attackDamage: 10
+  shootingDelay: 1
   paused: 0
 --- !u!120 &1341550559805388759
 LineRenderer:
