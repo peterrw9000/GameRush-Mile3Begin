@@ -3,6 +3,10 @@ Cmd: initializeCompiler
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+Cmd: shutdown
+>>>>>>> Stashed changes
 =======
 Cmd: shutdown
 >>>>>>> Stashed changes
