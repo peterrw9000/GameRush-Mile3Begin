@@ -25,8 +25,9 @@ public class DiskDropScorer : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Cylinder") {
-            playerHealth.currentHealth += 25;
-            playerHealth.CalcHealthSlider();
+            playerHealth.currentHealth += 25; 
+            float v = (float)playerHealth.currentHealth / playerHealth.startingHealth;
+            playerHealth.SetValue(v);
             score++;
         }
         if (score % 4 == 0) {

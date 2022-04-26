@@ -14,12 +14,17 @@ public class PlayerHealth : MonoBehaviour
     public int playerLives = 5;
     public Text damageTakenText;
 
-    public Slider playerHPBar; 
+    public Slider playerHPBar;
+
+    public Image mask;
 
     public float timer;
     [SerializeField] bool timerStarted = true;
 
     public bool paused;
+
+    float originalSize;
+
     void OnPauseGame() {
         paused = true;
     }
@@ -36,6 +41,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         currentHealth = startingHealth;
+        originalSize = mask.rectTransform.rect.width;
     }
 
     // Update is called once per frame
@@ -74,12 +80,18 @@ public class PlayerHealth : MonoBehaviour
             if (currentHealth <= 0 && isDead == false) {
                 Death();
             }
-            CalcHealthSlider();
+            float v = (float)currentHealth / startingHealth;
+            SetValue(v);
         }
+    }
+
+    public void SetValue(float value) {
+        mask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, originalSize * value);
     }
 
     public void CalcHealthSlider(){
         playerHPBar.value = (float)currentHealth / startingHealth;
+
     }
 
     public void Death() {
