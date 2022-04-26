@@ -12,8 +12,8 @@ public class BossMicrogameAttack : MonoBehaviour
     bool wallAttackFinished = false;
     bool wallAttackEnding = false;
     bool shieldAttackFinished = true;
-    bool shieldAttackStarting = false;
-    bool shieldAttackEnding = false;
+    /*bool shieldAttackStarting = false;
+    bool shieldAttackEnding = false;*/ //Unused variables
 
     int wallAttacking = 1;
 
@@ -44,13 +44,18 @@ public class BossMicrogameAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    void FixedUpdate()
+    {
         attackTimer += Time.deltaTime;
         if (attackTimer >= 3)
         {
             warning.SetActive(true);
             if (attackTimer >= 4)
             {
-                lazerFire();
+                LazerFire();
                 warning.SetActive(false);
                 attackTimer = 0;
             }
@@ -60,7 +65,7 @@ public class BossMicrogameAttack : MonoBehaviour
             if (shieldAttackFinished == true)
             {
                 wallAttackTimer += Time.deltaTime;
-                if (wallAttackTimer >= 10)
+                if (wallAttackTimer >= 5)
                 {
                     wallAttackFinished = false;
                     if (wallAttacking == 1)
@@ -106,49 +111,65 @@ public class BossMicrogameAttack : MonoBehaviour
                 shieldAttackTimer += Time.deltaTime;
                 if (shieldAttackTimer >= 2)
                 {
-                    shieldEnergy1.material.SetFloat("_fadetiming", 3);
-                    shieldEnergy2.material.SetFloat("_fadetiming", 3);
-                    shieldAttackFinished = false;
-                    shieldAttackStarting = true;
-                    Color alphaColor = shieldEnergy1.material.color;
-                    while (shieldAttackStarting == true)
-                    {
-                        if (alphaColor.a == 1)
-                        {
-                            shieldAttackStarting = false;
-                            shieldAttackEnding = true;
-                        }
-                    }
-                    while (shieldAttackEnding == true)
-                    {
-                        if (alphaColor.a == 0)
-                        {
-                            shieldAttackTimer = 0;
-                            shieldEnergy1.material.SetFloat("_fadetiming", 0);
-                            shieldEnergy2.material.SetFloat("_fadetiming", 0);
-                            wallAttackFinished = false;
-                            shieldAttackFinished = true;
-                        }
-                    }
-                    if (shieldEnergy1.material.GetFloat("_fadetiming") >= 1)
-                    {
-                        shield1.enabled = true;
-                        shield2.enabled = true;
-                    }
-                    else
-                    {
-                        shield1.enabled = false;
-                        shield2.enabled = false;
-                    }    
+                    ShieldAttack();
                 }
             }
         }
     }
 
-    void lazerFire()
+    void ShieldAttack()
+    {
+        shieldEnergy1.material.SetFloat("_fadetiming", 3);
+        shieldEnergy2.material.SetFloat("_fadetiming", 3);
+        shieldAttackFinished = false;
+        if (shieldAttackTimer >= 4)
+        {
+            shieldEnergy1.material.SetFloat("_fadetiming", 0);
+            shieldEnergy2.material.SetFloat("_fadetiming", 0);
+            shieldAttackFinished = true;
+            wallAttackFinished = false;
+            shieldAttackTimer = 0;
+        }
+        if (shieldEnergy1.material.GetFloat("_fadetiming") >= 1)
+        {
+            shield1.enabled = true;
+            shield2.enabled = true;
+        }
+        else
+        {
+            shield1.enabled = false;
+            shield2.enabled = false;
+        }
+    }
+
+    void LazerFire()
     {
         Rigidbody enemyLazer;
         enemyLazer = Instantiate(lazer, LazerSpawn.position, LazerSpawn.rotation) as Rigidbody;
         enemyLazer.AddForce(Vector3.down * speed);
     }
 }
+
+
+//Unused broken script:
+        /*shieldAttackStarting = true;
+        Color alphaColor = shieldEnergy1.material.color;
+        while (shieldAttackStarting == true)
+        {
+            if (alphaColor.a == 1)
+            {
+                shieldAttackStarting = false;
+                shieldAttackEnding = true;
+            }
+        }
+        while (shieldAttackEnding == true)
+        {
+            if (alphaColor.a == 0)
+            {
+                shieldAttackTimer = 0;
+                shieldEnergy1.material.SetFloat("_fadetiming", 0);
+                shieldEnergy2.material.SetFloat("_fadetiming", 0);
+                wallAttackFinished = false;
+                shieldAttackFinished = true;
+            }
+        }*/

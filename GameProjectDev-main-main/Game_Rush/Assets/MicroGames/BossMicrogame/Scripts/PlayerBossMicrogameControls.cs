@@ -9,8 +9,17 @@ public class PlayerBossMicrogameControls : MonoBehaviour
     float speed = 1;
     [SerializeField]
     float range = 1;
+    [SerializeField]
+    float lazerRange = 1;
 
     public LayerMask thisEnemy;
+
+    Renderer enemyFlash;
+
+    LineRenderer lazerView;
+    public Transform lazerOrigin;
+    public float lazerTimer = 0;
+    float displayTime = 0.05f;
 
     RaycastHit hit;
     Ray ray;
@@ -21,6 +30,7 @@ public class PlayerBossMicrogameControls : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        lazerView = GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
@@ -30,14 +40,29 @@ public class PlayerBossMicrogameControls : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         rb.velocity = new Vector3(h * speed, v * speed, 0);
+        lazerTimer += Time.deltaTime;
         if (Input.GetButtonDown("Jump/Fire"))
         {
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, range, thisEnemy))
+            lazerTimer = 0;
+            lazerView.SetPosition(0, lazerOrigin.position);
+            lazerView.enabled = true;
+            if (Physics.Raycast(lazerOrigin.position, transform.TransformDirection(Vector3.up), out hit, range, thisEnemy))
             {
+                lazerView.SetPosition(1, hit.point);
                 BossMicrogameHealth enemyHeal = hit.collider.GetComponent<BossMicrogameHealth>();
+                enemyFlash = hit.collider.GetComponent<Renderer>();
                 enemyHeal.health--;
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.black);
+                StartCoroutine(HitFlash());
+                //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.black);
             }
+            if (Physics.Raycast(lazerOrigin.position, transform.TransformDirection(Vector3.up), out hit, lazerRange))
+            {
+                lazerView.SetPosition(1, hit.point);
+            }
+        }
+        if (lazerTimer >= displayTime)
+        {
+            lazerView.enabled = false;
         }
     }
 
@@ -62,5 +87,12 @@ public class PlayerBossMicrogameControls : MonoBehaviour
         {
             SceneManager.LoadScene(8);
         }
+    }
+
+    IEnumerator HitFlash()
+    {
+        enemyFlash.enabled = false;
+        yield return new WaitForSeconds(0.1f);
+        enemyFlash.enabled = true;
     }
 }
