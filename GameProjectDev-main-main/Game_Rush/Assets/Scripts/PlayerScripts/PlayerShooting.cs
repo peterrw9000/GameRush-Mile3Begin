@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerShooting : MonoBehaviour {
 
@@ -31,6 +32,7 @@ public class PlayerShooting : MonoBehaviour {
     public Transform laserOrigin;
     public Camera camera;
     public Text hitText;
+    public TMP_Text TMPHitText;
   
     AudioManager audioManagement;
     AudioSource laserSound;
@@ -130,14 +132,19 @@ public class PlayerShooting : MonoBehaviour {
         if(hit.collider.tag == "Enemy")        { 
 
             Vector3 mousePosition = Input.mousePosition;
-            hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
-            hitText.text = damage.ToString() + " Damage!";
+            //hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
+            TMPHitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
+            //hitText.text = damage.ToString() + " Damage!";
+            TMPHitText.text = damage.ToString() + " Damage!";
+
         }
         else if(hit.collider.tag == "WeakSpot")
         {
             Vector3 mousePosition = Input.mousePosition;
-            hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
-            hitText.text = damage.ToString() + " Critical Hit!";            
+            //hitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
+            TMPHitText.gameObject.transform.position = new Vector3(mousePosition.x, mousePosition.y + 10f, mousePosition.z);
+            //hitText.text = damage.ToString() + " Critical Hit!";
+            TMPHitText.text = damage.ToString() + " Critical Hit!";            
         }
        
         

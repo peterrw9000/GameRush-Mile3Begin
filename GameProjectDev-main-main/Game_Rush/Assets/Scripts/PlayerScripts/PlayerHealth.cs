@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public MicroGameManager microGames;
     public int playerLives = 5;
     public Text damageTakenText;
+    public TMP_Text TMP_DamageTakenText;
 
     public Slider playerHPBar;
 
@@ -64,13 +66,15 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void DisplayGameText() {
-        if (GetComponentInChildren<Text>().gameObject.activeInHierarchy) {
-            damageTakenText.text = damageTaken.ToString() + " Damage Taken";
+        if (GetComponentInChildren<TMP_Text>().gameObject.activeInHierarchy) {
+            //damageTakenText.text = damageTaken.ToString() + " Damage Taken";
+            TMP_DamageTakenText.text = damageTaken.ToString() + " Damage Taken";
         }
     }
     void DisplayMicroGameText() {
-        if (GetComponentInChildren<Text>().gameObject.activeInHierarchy) {
-            damageTakenText.text = "Press SPACE to drop PWRBLK ";
+        if (GetComponentInChildren<TMP_Text>().gameObject.activeInHierarchy) {
+            //damageTakenText.text = "Press SPACE to drop PWRBLK ";
+            TMP_DamageTakenText.text = "Press SPACE to drop PWRBLK ";
         }
     }
 
