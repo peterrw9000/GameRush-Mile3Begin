@@ -7,10 +7,10 @@ public class FollowMouse : MonoBehaviour {
     RaycastHit hit;
     Ray ray;
 
-    int layerMask = 1 << 7;
+    int layerMask = 1 << 8;
 
     private void Start() {
-        layerMask = ~layerMask;
+        //layerMask = ~layerMask;
     }
 
     void Update() {
