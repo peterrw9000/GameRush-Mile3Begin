@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: d6d2688ffbd688f4bb4d9834a79e63d6, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -3744,7 +3744,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113942184}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4054,7 +4054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7316c9f046162c34dbdc312a47408af2, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7316c9f046162c34dbdc312a47408af2, type: 3}
       propertyPath: m_IsActive
@@ -9900,7 +9900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293478728}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20840,7 +20840,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455642969}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -23277,7 +23277,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534591353}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -24089,7 +24089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 565510504}
   - component: {fileID: 565510505}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spot Light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27114,7 +27114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 664406183}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lights Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31273,7 +31273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c818d2c8ff6b2624b9479c98978d072d, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c818d2c8ff6b2624b9479c98978d072d, type: 3}
       propertyPath: m_IsActive
@@ -36020,7 +36020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &955648903
 Transform:
   m_ObjectHideFlags: 0
@@ -36030,7 +36030,7 @@ Transform:
   m_GameObject: {fileID: 955648902}
   m_LocalRotation: {x: -0.67619216, y: -0, z: -0, w: 0.7367254}
   m_LocalPosition: {x: 37, y: 837.731, z: 1347}
-  m_LocalScale: {x: 3048.1912, y: 2096.4219, z: 5000}
+  m_LocalScale: {x: 13718.992, y: 2096.4219, z: 5000}
   m_Children: []
   m_Father: {fileID: 310398935}
   m_RootOrder: 1
@@ -36414,7 +36414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971573775}
   - component: {fileID: 971573776}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spot Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36486,7 +36486,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 110.05733, y: 89.22333}
   m_BounceIntensity: 1
@@ -39388,6 +39388,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 3921079037604497180, guid: d9d33589f2beff844b078cf45b931612, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921079037604497180, guid: d9d33589f2beff844b078cf45b931612, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3921079037949891794, guid: d9d33589f2beff844b078cf45b931612, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.1160052
@@ -40083,7 +40091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1090889170}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cockpit Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42689,7 +42697,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163867360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -52731,7 +52739,7 @@ Light:
   m_InnerSpotAngle: 45.90973
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -52858,7 +52866,7 @@ GameObject:
   - component: {fileID: 1477734194}
   - component: {fileID: 1477734195}
   - component: {fileID: 1477734196}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -52963,6 +52971,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -55542,7 +55551,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565572231}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -63747,7 +63756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814467464}
   - component: {fileID: 1814467465}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spot Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64587,7 +64596,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836405367}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -66539,6 +66548,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -66628,7 +66638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899525097}
   - component: {fileID: 1899525098}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spot Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68515,7 +68525,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932048323}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -70980,7 +70990,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984664119}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -72083,7 +72093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9b6736be8dd99d243ad0119f9f846d03, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9b6736be8dd99d243ad0119f9f846d03, type: 3}
       propertyPath: m_IsActive
