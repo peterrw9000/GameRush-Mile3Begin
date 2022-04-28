@@ -11,15 +11,25 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     float speed;
 
+    float timer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        speed = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        camView.transform.position = Vector3.Lerp(camView.transform.position, targetSpot.position, speed * Time.deltaTime);
+        timer += Time.deltaTime;
+        if (timer >= 2)
+        {
+            if (camView.transform.position.y <= -104)
+            {
+                speed += 0.0011f;
+            }
+            camView.transform.position = Vector3.Lerp(camView.transform.position, targetSpot.position, speed * Time.deltaTime);
+        }
     }
 }
