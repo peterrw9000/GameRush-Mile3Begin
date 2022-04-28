@@ -24,8 +24,6 @@ public class FollowMouse : MonoBehaviour {
 
         float rotationX = transform.rotation.eulerAngles.x;
 
-        Debug.Log(rotationX);
-
         if (rotationX < 330f && rotationX > 320f) {
             transform.rotation = Quaternion.Euler(330f, transform.eulerAngles.y, transform.eulerAngles.z);
         }
