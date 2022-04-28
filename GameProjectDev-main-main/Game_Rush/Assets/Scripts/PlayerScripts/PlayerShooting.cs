@@ -82,7 +82,7 @@ public class PlayerShooting : MonoBehaviour {
         laserSound.PlayOneShot(audioManagement.soundEffects[0]);
         if (Physics.Raycast(ray, out hit, 1000, layerMask)) {
 
-            //Debug.Log(hit.collider.gameObject.name.ToString());
+            Debug.Log(hit.collider.gameObject.name.ToString());
 
             if (hit.collider.tag == "WeakSpot")
             {
