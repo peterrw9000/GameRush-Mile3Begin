@@ -50,22 +50,22 @@ public class BossMicrogameAttack : MonoBehaviour
     void FixedUpdate()
     {
         attackTimer += Time.deltaTime;
-        if (attackTimer >= 3)
+        if (attackTimer >= 1)
         {
             warning.SetActive(true);
-            if (attackTimer >= 4)
+            if (attackTimer >= 2)
             {
                 LazerFire();
                 warning.SetActive(false);
                 attackTimer = 0;
             }
         }
-        if (camPosition.position.y >= 55)
+        if (camPosition.position.y >= 57.5)
         {
             if (shieldAttackFinished == true)
             {
                 wallAttackTimer += Time.deltaTime;
-                if (wallAttackTimer >= 5)
+                if (wallAttackTimer >= 3)
                 {
                     wallAttackFinished = false;
                     if (wallAttacking == 1)
@@ -76,7 +76,7 @@ public class BossMicrogameAttack : MonoBehaviour
                             wallAttackEnding = true;
                             xdirection *= -1;
                         }
-                        if (deathWall1.position.x == -40 && wallAttackEnding == true)
+                        if (deathWall1.position.x == -41 && wallAttackEnding == true)
                         {
                             wallAttacking = 2;
                             wallAttackFinished = true;
@@ -96,7 +96,7 @@ public class BossMicrogameAttack : MonoBehaviour
                         {
                             deathWall2.transform.Translate(new Vector3(xdirection * wallSpeed, 0, 0));
                         }
-                        if (deathWall2.position.x == 40 && wallAttackEnding == true)
+                        if (deathWall2.position.x == 41 && wallAttackEnding == true)
                         {
                             wallAttacking = 1;
                             wallAttackFinished = true;
@@ -109,7 +109,7 @@ public class BossMicrogameAttack : MonoBehaviour
             if (wallAttackFinished == true)
             {
                 shieldAttackTimer += Time.deltaTime;
-                if (shieldAttackTimer >= 2)
+                if (shieldAttackTimer >= 1)
                 {
                     ShieldAttack();
                 }
@@ -122,7 +122,7 @@ public class BossMicrogameAttack : MonoBehaviour
         shieldEnergy1.material.SetFloat("_fadetiming", 3);
         shieldEnergy2.material.SetFloat("_fadetiming", 3);
         shieldAttackFinished = false;
-        if (shieldAttackTimer >= 4)
+        if (shieldAttackTimer >= 3)
         {
             shieldEnergy1.material.SetFloat("_fadetiming", 0);
             shieldEnergy2.material.SetFloat("_fadetiming", 0);
