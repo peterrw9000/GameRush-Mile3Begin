@@ -21,9 +21,11 @@ public class BossHealth : MonoBehaviour {
     public float timeTillAttack;    
 
     SkinnedMeshRenderer[] skinnedMeshRenderers = new SkinnedMeshRenderer[3];
+    Light[] lights = new Light[3];
     Renderer[] renderers = new Renderer[3];
     int[] randomCores = new int[] { 0, 2 };
     float colorLerp;
+    float lightLerp;
     
     int[] damageToCores = new int[] { 0, 0, 0 };
     int hitCount = 0;
@@ -37,6 +39,7 @@ public class BossHealth : MonoBehaviour {
         currentHealth = startingHealth;
         for (int i = 0; i < (bossCores.Length); i++) {
             skinnedMeshRenderers[i] = bossCores[i].GetComponent<SkinnedMeshRenderer>();
+            lights[i] = bossCores[i].GetComponent<Light>();
         }
         ChooseActiveCore();
         attackTimer = 0;
@@ -46,26 +49,31 @@ public class BossHealth : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown("x")) {
+/*        if (Input.GetKeyDown("x")) {
             Attack();
-/*            foreach (GameObject bossGun in bossGuns) {
+*//*            foreach (GameObject bossGun in bossGuns) {
                 var BA = bossGun.GetComponent<BossAttack>();
                 BA.Shoot();
-            }*/
+            }*//*
         }
 
         for (int i = 0; i < 10; ++i) {
             if (Input.GetKeyDown("" + i)) {
                 ActivateGivenCore(i);
             }
-        }
+        }*/
 
         for (int i = 0; i < (bossCores.Length); i++) {
             if (activeCore == i) {
                 skinnedMeshRenderers[i].material.color = Color.Lerp(Color.white, Color.red, colorLerp);
+                lights[i].intensity = lightLerp;
+            }
+            else {
+                lights[i].intensity = 0;
             }
         }
         colorLerp = Mathf.PingPong(Time.time, .3f) / .3f;
+        lightLerp = Mathf.PingPong(Time.time, .3f) / .3f;
 
         attackTimer += Time.deltaTime;
 

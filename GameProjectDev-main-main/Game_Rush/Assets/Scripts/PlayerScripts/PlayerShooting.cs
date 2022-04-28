@@ -37,6 +37,8 @@ public class PlayerShooting : MonoBehaviour {
     AudioManager audioManagement;
     AudioSource laserSound;
 
+    int layerMask = 1 << 7;
+
     public bool paused;
     void OnPauseGame() {
         paused = true;
@@ -55,6 +57,7 @@ public class PlayerShooting : MonoBehaviour {
     void Start() {
         laserFire = GetComponent<LineRenderer>();
         laserSound = GetComponent<AudioSource>();
+        layerMask = ~layerMask;
     }
 
     void Update() {
@@ -77,9 +80,9 @@ public class PlayerShooting : MonoBehaviour {
         timer = 0f;
         laserFire.enabled = true;
         laserSound.PlayOneShot(audioManagement.soundEffects[0]);
-        if (Physics.Raycast(ray, out hit)) {
+        if (Physics.Raycast(ray, out hit, 1000, layerMask)) {
 
-            ///Debug.Log(hit.collider.gameObject.name.ToString());
+            //Debug.Log(hit.collider.gameObject.name.ToString());
 
             if (hit.collider.tag == "WeakSpot")
             {
@@ -118,10 +121,7 @@ public class PlayerShooting : MonoBehaviour {
                 }
                 else {
                     Debug.Log(hit.collider.gameObject.name.ToString());
-                }
-               
-                
-                
+                }  
             }
             laserFire.SetPosition(1, hit.point);
         }
