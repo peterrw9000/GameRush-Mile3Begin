@@ -40,7 +40,9 @@ public class EnemyAttackMelee : MonoBehaviour
     void Attack() {
         enemyMeleeSound.PlayOneShot(audioManagement.soundEffects[5]);
         playerHealth.TakeDamage(attackDamage);
-        playerMover.enemiesDestroyed++;
+        if (!enemyHealth.isDead) {
+            playerMover.enemiesDestroyed++;
+        }
         enemyHealth.Death(0f);
     }
 }

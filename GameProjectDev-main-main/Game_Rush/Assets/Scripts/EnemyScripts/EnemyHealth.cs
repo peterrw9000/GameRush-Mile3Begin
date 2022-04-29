@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
     public int startingHealth = 10;
     public int currentHealth;
 
-    bool isDead = false;
+    public bool isDead = false;
     public bool grounded = false;
 
     public PlayerMover playerMover;
