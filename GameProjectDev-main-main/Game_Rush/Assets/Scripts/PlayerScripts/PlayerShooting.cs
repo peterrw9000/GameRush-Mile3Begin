@@ -67,7 +67,7 @@ public class PlayerShooting : MonoBehaviour {
 
         timer += Time.deltaTime;
 
-        if (Input.GetButtonDown("Fire1") && timer >= fireRate && Time.timeScale != 0 && !paused) {
+        if (Input.GetButton("Fire1") && timer >= fireRate && Time.timeScale != 0 && !paused) {
             Shoot();
         }
         if (timer >= fireRate * effectdisplay) {
