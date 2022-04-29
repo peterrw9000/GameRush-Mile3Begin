@@ -10,7 +10,8 @@ public class StartGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gm = FindObjectOfType<GameManager>();
+        GameObject go = GameObject.Find("GameManager");
+        gm = go.GetComponent<GameManager>();
     }
 
     // Update is called once per frame
