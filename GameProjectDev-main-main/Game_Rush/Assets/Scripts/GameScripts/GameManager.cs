@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+     public void ResetLives() {
+        playerLives = 5;
+    }
+
     // Update is called once per frame
     void Update()
     {
