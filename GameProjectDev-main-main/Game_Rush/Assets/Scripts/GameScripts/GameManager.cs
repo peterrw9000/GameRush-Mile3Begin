@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -32,6 +33,15 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown("z")) {
             Debug.Break();
+        }
+
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Level" || scene.name == "BossMicrogame") {
+            Cursor.visible = false;
+        }
+        else {
+            Cursor.visible = true;
         }
     }
 }
