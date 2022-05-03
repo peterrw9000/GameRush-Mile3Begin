@@ -22,8 +22,9 @@ public class HomingRocket : MonoBehaviour
 
     public Slider enemyHPBar;
 
-    // [SerializeField]
-    // float rocketLife = 1f;
+    [SerializeField]
+    float rocketLife = 5f;
+
     public int startingHealth = 2;
 
     Transform targetPlayer;
@@ -52,7 +53,7 @@ public class HomingRocket : MonoBehaviour
 
     private void Update()
     {
-        
+        Destroy(gameObject, rocketLife);
     }
 
     // Update is called once per frame
@@ -113,9 +114,8 @@ public class HomingRocket : MonoBehaviour
         {
             playerHealth = col.gameObject.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(rocketDam);
-            //add rocketlife after gameobject only if you want to.
             Explode();
-            Destroy(gameObject, .1f);           
+            Destroy(gameObject);           
         }
         
     }
