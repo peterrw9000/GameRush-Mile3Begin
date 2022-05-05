@@ -39,4 +39,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossMicrogame.unity
     guid: a0a361ddbc1687245bd9a6c94c14473c
+  - enabled: 1
+    path: Assets/Scenes/GameTransition.unity
+    guid: 8dd9d53165c175448934abeda3c82bd5
   m_configObjects: {}

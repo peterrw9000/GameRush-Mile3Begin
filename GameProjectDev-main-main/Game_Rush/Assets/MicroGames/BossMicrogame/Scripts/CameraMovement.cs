@@ -29,6 +29,10 @@ public class CameraMovement : MonoBehaviour
             {
                 speed += 0.0011f;
             }
+            else if (camView.transform.position.y > 55 && camView.transform.position.y <= 61)
+            {
+                speed += 0.0011f;
+            }
             camView.transform.position = Vector3.Lerp(camView.transform.position, targetSpot.position, speed * Time.deltaTime);
         }
     }

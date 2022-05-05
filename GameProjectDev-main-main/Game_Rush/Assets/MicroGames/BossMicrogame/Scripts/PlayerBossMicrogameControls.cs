@@ -13,6 +13,7 @@ public class PlayerBossMicrogameControls : MonoBehaviour
     float lazerRange = 1;
 
     public LayerMask thisEnemy;
+    public Transform camLoc;
 
     Renderer enemyFlash;
 
@@ -40,6 +41,10 @@ public class PlayerBossMicrogameControls : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         rb.velocity = new Vector3(h * speed, v * speed, 0);
+        if (transform.position.y < (camLoc.position.y - 9))
+        {
+            SceneManager.LoadScene(8);
+        }
         lazerTimer += Time.deltaTime;
         if (Input.GetButtonDown("Jump/Fire"))
         {
