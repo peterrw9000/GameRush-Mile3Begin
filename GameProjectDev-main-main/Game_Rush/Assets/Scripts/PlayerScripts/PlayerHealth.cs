@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public bool isDead;
     public int damageTaken;
     public MicroGameManager microGames;
-    public int playerLives = 5;
+   // public int playerLives = 5;
     public Text damageTakenText;
     public TMP_Text TMP_DamageTakenText;
 
@@ -26,6 +26,8 @@ public class PlayerHealth : MonoBehaviour
     public bool paused;
 
     float originalSize;
+
+    GameOverTrans GameOverTrans;
 
     void OnPauseGame() {
         paused = true;
@@ -44,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = startingHealth;
         originalSize = mask.rectTransform.rect.width;
+        GameOverTrans = FindObjectOfType<GameOverTrans>();
     }
 
     // Update is called once per frame
@@ -99,14 +102,16 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void Death() {
+
         GameManager.instance.playerLives--;
-        //isDead = true;
+        isDead = true;
         if (GameManager.instance.playerLives > 0) {
             microGames.SetActiveGame(0);
         }
-        else
+        else if(currentHealth <= 0 && GameManager.instance.playerLives <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            // SceneManager.LoadScene("GameOver");
+            GameOverTrans.fadeIn = true;
         }
     }
 }

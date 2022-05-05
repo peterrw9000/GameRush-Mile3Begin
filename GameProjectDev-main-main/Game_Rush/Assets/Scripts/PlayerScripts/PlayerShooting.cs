@@ -8,17 +8,15 @@ public class PlayerShooting : MonoBehaviour {
 
     public int laserDPS = 1;
 
-    [SerializeField]
+   /* [SerializeField]
     float range = 1000;
+   */
 
     [SerializeField]
     float fireRate = 0.50f;
 
     [SerializeField]
     Image overHeat;
-
-    [SerializeField]
-    Image overHeat2;
 
     float timer;
 
