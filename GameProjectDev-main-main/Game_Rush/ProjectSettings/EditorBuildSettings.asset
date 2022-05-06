@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus Scene/Main Menu.unity
     guid: f6aeab6f42766244688559c7b2517f40
   - enabled: 1
-    path: Assets/Scenes/Level.unity
+    path: Assets/Scenes/Menus Scene/Level.unity
     guid: 63e7426a805f86f41adcbc7428a2c43d
   - enabled: 1
     path: Assets/Scenes/Menus Scene/Player-Controls&Mini-Game controls/ControlScheme.unity

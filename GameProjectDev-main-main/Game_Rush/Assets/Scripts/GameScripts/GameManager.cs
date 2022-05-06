@@ -26,6 +26,18 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
         
+=======
+        if (Input.GetKeyDown("z")) {
+            Debug.Break();
+        }
+
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (Cursor.visible == true) {
+            Cursor.visible = false;
+        }
+>>>>>>> Stashed changes
     }
 }
