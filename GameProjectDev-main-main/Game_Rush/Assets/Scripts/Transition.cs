@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class Transition : MonoBehaviour
 {
     public Text countdown;
+    public TMP_Text TMP_countdown;
 
     float timer = 10f;
     // Start is called before the first frame update
@@ -19,7 +22,7 @@ public class Transition : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        countdown.text = "Entering The Final Battle In " + timer.ToString("F2");
+        TMP_countdown.text = "Entering The Final Battle In " + timer.ToString("F2");
         if (timer <= 0)
         {
             SceneManager.LoadScene(10);
