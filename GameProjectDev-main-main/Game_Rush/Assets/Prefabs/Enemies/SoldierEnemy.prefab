@@ -138,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 4
   currentHealth: 0
+  isDead: 0
   grounded: 0
   playerMover: {fileID: 0}
   explosion: {fileID: 8725940683926336782, guid: 01d83e3c2307614459a06bcdc1de9661, type: 3}
@@ -161,7 +162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTillAttack: 5
   timeAttack: 0
-  attackDamage: 10
+  attackDamage: 5
+  shootingDelay: 1
   paused: 0
 --- !u!120 &1341550559805388759
 LineRenderer:
