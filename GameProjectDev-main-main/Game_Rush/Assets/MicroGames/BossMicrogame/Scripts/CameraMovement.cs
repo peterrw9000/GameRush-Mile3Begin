@@ -19,8 +19,7 @@ public class CameraMovement : MonoBehaviour
         speed = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         timer += Time.deltaTime;
         if (timer >= 2)
@@ -35,5 +34,11 @@ public class CameraMovement : MonoBehaviour
             }
             camView.transform.position = Vector3.Lerp(camView.transform.position, targetSpot.position, speed * Time.deltaTime);
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
