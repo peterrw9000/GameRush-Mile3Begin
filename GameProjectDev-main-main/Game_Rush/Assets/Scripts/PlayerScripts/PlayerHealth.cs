@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
 
     float originalSize;
 
-    GameOverTrans GameOverTrans;
+    public GameOverTrans GameOverTrans;
 
     void OnPauseGame() {
         paused = true;
@@ -46,7 +46,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = startingHealth;
         originalSize = mask.rectTransform.rect.width;
-        GameOverTrans = FindObjectOfType<GameOverTrans>();
+        //GameOverTrans = FindObjectOfType<GameOverTrans>();
     }
 
     // Update is called once per frame

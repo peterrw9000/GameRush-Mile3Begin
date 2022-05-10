@@ -28,10 +28,10 @@ public class GameOverTrans : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameOverAudio = GetComponent<AudioSource>();
-        enemyMovement = GetComponent<EnemyMovement>();
-        playerMover = GetComponent<PlayerMover>();
-        playerHealth = GetComponent<PlayerHealth>();
+        gameOverAudio = FindObjectOfType<AudioSource>();
+        enemyMovement = FindObjectOfType<EnemyMovement>();
+        playerMover = FindObjectOfType<PlayerMover>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
 
     }
 
@@ -90,6 +90,7 @@ public class GameOverTrans : MonoBehaviour
 
     public void FadeIn()
     {
+        StopAll();
         if (uIGroup.alpha < 1)
         {
             uIGroup.alpha += Time.deltaTime;

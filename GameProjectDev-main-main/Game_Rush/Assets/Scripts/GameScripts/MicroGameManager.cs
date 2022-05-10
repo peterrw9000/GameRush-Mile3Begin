@@ -10,6 +10,7 @@ public class MicroGameManager : MonoBehaviour
     public Text healthText;
     public Text damageText;
     public EnemySpawner enemySpawner;
+    public PlayerHealth playerHealth;
 
     AudioManager audioManagement;
     AudioSource microgameSounds;
@@ -81,6 +82,7 @@ public class MicroGameManager : MonoBehaviour
         }
         healthText.gameObject.SetActive(true);
         damageText.gameObject.SetActive(true);
+        playerHealth.isDead = false;
         //enemySpawner.OnResumeGame();
     }
 }
