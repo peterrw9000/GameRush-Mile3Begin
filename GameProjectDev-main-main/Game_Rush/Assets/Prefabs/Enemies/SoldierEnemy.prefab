@@ -162,8 +162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTillAttack: 5
   timeAttack: 0
-  attackDamage: 5
-  shootingDelay: 1
+  attackDamage: 1
+  shootingDelay: 0.4
   paused: 0
 --- !u!120 &1341550559805388759
 LineRenderer:
